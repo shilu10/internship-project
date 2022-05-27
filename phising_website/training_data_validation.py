@@ -38,14 +38,12 @@ class Training_data_validator :
         client_data_transformer = Transform_Client_Data()
         client_data_transformer.transform_client_data(filename)
 
-        # db connection and insertion of the data. 
-        
-        db = DBConnection(filename)
-        connection = db.connect()[0]
-        db_name = db.connect()[1]
-
-        db_operations = DataBaseOperations(connection, columns_name, db_name)
+        # for creation the table in the db
+        db_operations = DataBaseOperations(columns_name, filename)
         db_operations.create_table()
+
+        # for insertion of values into the table 
+        db_operations.insert_values()
 
 
 class Transform_Client_Data :
