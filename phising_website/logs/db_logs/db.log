@@ -1,0 +1,81 @@
+info : 2022-05-26 : 13:41:54 : Started the db connection and the operation!! 
+info : 2022-05-26 : 13:45:29 : Started the db connection and the operation!! 
+info : 2022-05-26 : 13:46:42 : Started the db connection and the operation!! 
+info : 2022-05-26 : 13:50:04 : Started the db connection and the operation!! 
+info : 2022-05-26 : 13:51:33 : Started the db connection and the operation!! 
+info : 2022-05-26 : 13:54:29 : Started the db connection and the operation!! 
+info : 2022-05-26 : 13:57:42 : Started the db connection and the operation!! 
+info : 2022-05-26 : 14:36:38 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 14:36:38 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 14:38:02 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 14:38:02 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 14:38:41 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 14:38:41 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:41:48 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:41:48 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:41:48 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:41:48 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:43:11 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:43:11 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:43:11 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:43:11 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:44:31 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:44:31 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:44:31 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:44:31 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:45:24 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:45:24 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:45:24 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:45:24 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:46:20 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:46:20 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:46:20 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:46:20 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:47:27 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:47:27 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:47:27 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:47:27 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:47:53 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:47:53 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:47:53 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:47:53 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:48:30 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:48:30 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:48:30 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:48:30 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:49:38 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:49:38 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:49:38 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:49:38 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:51:01 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:51:01 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:51:01 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:51:01 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:53:10 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:53:10 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:53:10 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:53:10 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:54:01 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:54:01 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:54:01 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:54:01 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:54:57 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:54:57 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:54:57 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:54:57 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:55:47 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:55:47 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:55:47 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:55:47 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:57:19 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:57:19 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:57:19 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:57:19 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:58:54 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-26 : 15:58:54 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-26 : 15:58:54 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-26 : 15:58:54 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:41:11 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:41:12 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-27 : 12:41:12 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-27 : 12:41:12 : Closed the db connection to phising_08012020_120000.db 
