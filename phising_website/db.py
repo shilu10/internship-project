@@ -45,17 +45,27 @@ class DataBaseOperations :
                 self.logger.log("db_logs", "db.log", "info", f"Table named {table_name} created successfully in {self.db_name} Database")
             
             else :
-                column_types = list(self.column_names.values())
-                column_names = list(self.column_names.keys())
-                #print(column_names[0], column_types)
-                query = f"CREATE TABLE {table_name} {column_names} {column_types}"
-                cursor.execute(query)
-                self.connection.commit()
-                self.logger.log("db_logs", "db.log", "info", f"Table named {table_name} created successfully in {self.db_name}")
-        
+                for col_name in self.column_names.keys() : 
+                    col_type = self.column_names[col_name]                
+                    try :
+                        
+                        query = f'ALTER TABLE {table_name} ADD COLUMN "{col_name}" {col_type}'
+                        cursor.execute(query)
+                        self.connection.commit()
+                        print("this is failuer")
+
+                    except :
+                        query = f"CREATE TABLE {table_name} ({col_name} {col_type})"
+                        cursor.execute(query)
+                        self.connection.commit()
+                        print("this is success")
+                        
         except Exception as error :
             print(error)
             self.logger.log("db_logs", "db.log", "error", f"Error while creating {table_name} in {self.db_name} Database")
+
+        else :
+            self.logger.log("db_logs", "db.log", "info", f"Table named {table_name} created successfully in {self.db_name}")
 
         finally :
             self.connection.close()

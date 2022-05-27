@@ -79,3 +79,132 @@ info : 2022-05-27 : 12:41:11 : Started the db connection to phising_08012020_120
 info : 2022-05-27 : 12:41:12 : Started the db connection to phising_08012020_120000.db 
 error : 2022-05-27 : 12:41:12 : Error while creating training in phising_08012020_120000.db Database 
 info : 2022-05-27 : 12:41:12 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:45:23 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:45:23 : Started the db connection to phising_08012020_120000.db 
+error : 2022-05-27 : 12:45:23 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-27 : 12:45:23 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:54:59 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:54:59 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:54:59 : Table named training created successfully in phising_08012020_120000.db 
+error : 2022-05-27 : 12:54:59 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-27 : 12:54:59 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:55:09 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:55:09 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:55:09 : Table named training created successfully in phising_08012020_120000.db 
+error : 2022-05-27 : 12:55:09 : Error while creating training in phising_08012020_120000.db Database 
+info : 2022-05-27 : 12:55:09 : Closed the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:15 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:15 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:17 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:17 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:17 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:17 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:17 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:18 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:19 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:20 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:21 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:21 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:21 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:21 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:21 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:21 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:21 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:22 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:22 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:22 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:22 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:22 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:22 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:23 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:23 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:23 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:23 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:24 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:24 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:24 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:24 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:25 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:25 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:25 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:26 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:26 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:28 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:29 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:30 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:30 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:30 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:30 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:30 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:30 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:31 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:31 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:31 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:31 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:32 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:33 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:33 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:33 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:33 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:33 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:33 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:35 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:37 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:39 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:40 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:42 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:43 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:44 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:45 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:45 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:45 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:45 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:45 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:46 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:46 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:46 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:46 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:46 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:46 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:46 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:46 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:47 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:47 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:47 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:47 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:47 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:47 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:47 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:47 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:48 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:49 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:49 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:49 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:49 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:49 : Table named training created successfully in phising_08012020_120000.db 
+info : 2022-05-27 : 12:58:49 : Closed the db connection to phising_08012020_120000.db 
