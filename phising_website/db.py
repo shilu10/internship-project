@@ -2,6 +2,7 @@ import sqlite3
 from pathlib import Path
 from Application_logger import logger 
 import pandas as pd 
+import shutil
 
 # we will have different database file for each csv client files.
 class DBConnection :
@@ -25,12 +26,16 @@ class DBConnection :
 class DataBaseOperations :
     
     def __init__(self, column_names, filename) :
+
         self.column_names = column_names
-       # self.connection = connection 
         self.filename = filename
         self.logger = logger.Logger()
         self.db_connection = DBConnection(self.filename)
-        self.filepath = "Training_data_segregation/Good_Data/phising_08012020_120000.csv"
+        self.good_file_folder = "Training_data_segregation/Good_Data/"
+        self.bad_file_folder = "Training_data_segregation/Bad_Data/"
+        self.path = Path("db_training_files/")
+        self.path.mkdir(parents = True, exist_ok = True)
+        self.training_file_from_db = "db_training_files/"
 
     def create_table(self) :
         connection = self.db_connection.connect()
@@ -74,25 +79,39 @@ class DataBaseOperations :
             connection.close()
             self.logger.log("db_logs", "db.log", "info", f"Closed the db connection to {self.filename}")
 
-
     def insert_values(self) :
 
         try :
             connection = self.db_connection.connect()
-            data = pd.read_csv(self.filepath)
-            data.to_sql("training", connection, if_exists='replace', index=False)
+            data = pd.read_csv(self.good_file_folder + self.filename)
+            data.to_sql("training", connection, if_exists = 'replace', index = False)
             connection.commit()
             self.logger.log("db_logs", "db.log", "info", f"Values are inserted into the table of training in {self.filename}")
         
         except Exception as error :
-            print(error)
             connection.rollback()
+            shutil.move(self.good_file_folder + self.filename, self.bad_file_folder)
+            self.logger.log("general_logs", "general.log", "error", f"Error while working with the good data file during the database operation so moving it into bad data directory")
             self.logger.log("db_logs", "db.log", "error", f"Error while inserting the values into training new in {self.filename}")
 
         finally :
             connection.close()
             self.logger.log("db_logs", "db.log", "info", f"Closed the db connection to {self.filename}")
 
+    def create_csv(self) :
+
+        try : 
+            connection = self.db_connection.connect()
+            db_df = pd.read_sql_query("SELECT * FROM training", connection)
+            db_df.to_csv(self.training_file_from_db + self.filename, index = False)
+            self.logger.log("db_logs", "db.log", "info", f"Successfully converted the table values into csv file and saved in the db_training_dir")
+        
+        except Exception as error :
+            self.logger.log("db_logs", "db.log", "error", f"Error during the creation of csv file from the values of the db table")
+
+        finally :
+            connection.close()
+            self.logger.log("db_logs", "db.log", "info", f"Closed the db connection to {self.filename}")
 
 
 
