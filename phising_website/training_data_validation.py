@@ -1,8 +1,8 @@
-from Application_logger import logger
+from application_logger import logger
 from schema_values import Client_Rawdata
 from file_operation import File_Operation
-from raw_data_validator import RawDataValidator
-from clientdatatransformation import DataTransformation
+from raw_data_validation import RawDataValidator
+from client_data_transformation import DataTransformation
 from db import *
 
 class Training_data_validator :
@@ -10,7 +10,7 @@ class Training_data_validator :
     def __init__(self) :
         self.type_of_data = "training" 
         self.logger = logger.Logger()
-        self.file_path = "Client_files/"
+        self.file_path = "client_files_training/"
 
     def validate_training_data(self, filename) :
          # Getting the predefined schema values from the schema files.
@@ -20,12 +20,7 @@ class Training_data_validator :
         number_of_columns, columns_name, length_of_datestamp, length_of_timestamp = schema_obj.values_for_validation()
         filename_pattern = schema_obj.regex_pattern_creation()
 
-        file_operation_obj = File_Operation(self.type_of_data)
-
-        # creation of good data and bad data folder.
-        file_operation_obj.directory_creation()
-
-
+    
         # validates the data.
         validator_obj = RawDataValidator()
 

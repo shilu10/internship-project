@@ -1,55 +1,9 @@
-info : 2022-05-27 : 14:01:44 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-27 : 14:01:50 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:01:55 : Error while creating training in phising_08012020_120000.csv Database 
-info : 2022-05-27 : 14:01:55 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:01:55 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:01:55 : Error while inserting the values into training new in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:01:55 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:02:06 : Table named training created successfully in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:02:06 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:02:06 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:02:06 : Error while inserting the values into training new in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:02:06 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:03:31 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:03:31 : Error while creating training in phising_08012020_120000.csv Database 
-info : 2022-05-27 : 14:03:31 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:03:31 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:03:31 : Error while inserting the values into training new in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:03:31 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:03:43 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:03:43 : Error while creating training in phising_08012020_120000.csv Database 
-info : 2022-05-27 : 14:03:43 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:03:43 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:03:43 : Error while inserting the values into training new in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:03:43 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:05:35 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-27 : 14:05:35 : Table named training created successfully in phising_08012020_120000.csv Database 
-info : 2022-05-27 : 14:05:35 : Table named training created successfully in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:05:35 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:05:35 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:05:35 : Error while inserting the values into training new in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:05:35 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:06:50 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-27 : 14:06:50 : Table named training created successfully in phising_08012020_120000.csv Database 
-info : 2022-05-27 : 14:06:50 : Table named training created successfully in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:06:50 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:06:50 : Started the db connection to phising_08012020_120000.db 
-error : 2022-05-27 : 14:06:50 : Error while inserting the values into training new in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:06:50 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:07:27 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-27 : 14:07:27 : Table named training created successfully in phising_08012020_120000.csv Database 
-info : 2022-05-27 : 14:07:27 : Table named training created successfully in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:07:27 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:07:27 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-27 : 14:07:31 : Values are inserted into the table of training in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:07:31 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:33:10 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-27 : 14:33:10 : Table named training created successfully in phising_08012020_120000.csv Database 
-info : 2022-05-27 : 14:33:10 : Table named training created successfully in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:33:10 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:33:10 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-27 : 14:33:17 : Values are inserted into the table of training in phising_08012020_120000.csv 
-info : 2022-05-27 : 14:33:17 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-27 : 14:33:17 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-27 : 14:33:27 : Successfully converted the table values into csv file and saved in the db_training_dir 
-info : 2022-05-27 : 14:33:27 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-05-28 : 14:04:01 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-28 : 14:04:06 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-05-28 : 14:04:06 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-05-28 : 14:04:06 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-28 : 14:04:14 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-05-28 : 14:04:14 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-05-28 : 14:04:14 : Started the db connection to phising_08012020_120000.db 
+info : 2022-05-28 : 14:04:30 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-05-28 : 14:04:30 : Closed the db connection to phising_08012020_120000.csv 

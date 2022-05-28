@@ -1,6 +1,6 @@
 import sqlite3
 from pathlib import Path
-from Application_logger import logger 
+from application_logger import logger 
 import pandas as pd 
 import shutil
 
@@ -8,7 +8,7 @@ import shutil
 class DBConnection :
     def __init__(self, filename) :
         self.db_name = filename.split('.')[0] + ".db"
-        self.path = Path("Training_DB/")
+        self.path = Path("training_databases/")
         self.path.mkdir(parents = True, exist_ok = True)
         self.logger = logger.Logger()
     
@@ -16,7 +16,7 @@ class DBConnection :
 
         try :
             self.logger.log("db_logs", "db.log", "info", f"Started the db connection to {self.db_name}")
-            self.connection = sqlite3.connect(Path(f"Training_DB/{self.db_name}"))
+            self.connection = sqlite3.connect(Path(f"training_databases/{self.db_name}"))
             return self.connection
 
         except ConnectionError as error :
@@ -31,8 +31,8 @@ class DataBaseOperations :
         self.filename = filename
         self.logger = logger.Logger()
         self.db_connection = DBConnection(self.filename)
-        self.good_file_folder = "Training_data_segregation/Good_Data/"
-        self.bad_file_folder = "Training_data_segregation/Bad_Data/"
+        self.good_file_folder = "training_data_segregation/good_data/"
+        self.bad_file_folder = "training_data_segregation/bad_data/"
         self.path = Path("db_training_files/")
         self.path.mkdir(parents = True, exist_ok = True)
         self.training_file_from_db = "db_training_files/"
@@ -50,7 +50,6 @@ class DataBaseOperations :
             res = cursor.fetchone()[0]
             print(res == 1 )
             if res == 1 :
-                print("yes")
                 self.logger.log("db_logs", "db.log", "info", f"Table named {table_name} created successfully in {self.filename} Database")
             
             else :
@@ -63,13 +62,11 @@ class DataBaseOperations :
                         connection.commit()
                         
                     except Exception as error:
-                        print(error)
                         query = f"CREATE TABLE {table_name} ({col_name} {col_type})"
                         cursor.execute(query)
                         connection.commit()
                         
         except Exception as error :
-            print("errp", error)
             self.logger.log("db_logs", "db.log", "error", f"Error while creating {table_name} in {self.filename} Database")
 
         else :

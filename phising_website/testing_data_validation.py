@@ -1,7 +1,7 @@
-from Application_logger import logger
+from application_logger import logger
 from schema_values import Client_Rawdata
 from file_operation import File_Operation
-from raw_data_validator import RawDataValidator
+from raw_data_validation import RawDataValidator
 
 class Testing_data_validator :
     # Class attributes.
