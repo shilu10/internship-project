@@ -3,11 +3,11 @@ import pandas as pd
 from pathlib import Path
 import shutil, os
 
-class File_Handler : 
+class FileHandler: 
     LOGGER = logger.Logger()
 
     @classmethod
-    def save_file(cls, file_obj, filename, type_of_data) :
+    def save_file(cls, file_obj, filename, type_of_data):
         if type_of_data == "training" : 
             folder = 'client_files_training/'
         else :
@@ -22,7 +22,7 @@ class File_Handler :
         if path.is_file():
             os.remove(filename)
             pass
-        else :
+        else:
             shutil.move(filename, folder)
         cls.LOGGER.log("general_logs", "general.log", "info", f"Moving the Client file to the {folder} directory....")
 

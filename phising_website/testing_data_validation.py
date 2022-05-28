@@ -3,16 +3,16 @@ from schema_values import Client_Rawdata
 from file_operation import File_Operation
 from raw_data_validation import RawDataValidator
 
-class Testing_data_validator :
+class TestingDataValidator :
     # Class attributes.
 
-    def __init__(self) :
+    def __init__(self):
         self.type_of_data = "testing" 
         self.logger = logger.Logger()
-        self.file_path = "Client_files_testing/"
+        self.file_path = "client_files_testing/"
 
     
-    def validate_training_data(self, filename) :
+    def validate_testing_data(self, filename):
          # Getting the predefined schema values from the schema files.
         schema_obj = Client_Rawdata(self.type_of_data)
 

@@ -5,14 +5,14 @@ from raw_data_validation import RawDataValidator
 from client_data_transformation import DataTransformation
 from db import *
 
-class Training_data_validator :
+class Training_data_validator:
 
-    def __init__(self) :
+    def __init__(self):
         self.type_of_data = "training" 
         self.logger = logger.Logger()
         self.file_path = "client_files_training/"
 
-    def validate_training_data(self, filename) :
+    def validate_training_data(self, filename):
          # Getting the predefined schema values from the schema files.
         schema_obj = Client_Rawdata(self.type_of_data)
 
@@ -44,9 +44,9 @@ class Training_data_validator :
         db_operations.create_csv()
 
 
-class Transform_Client_Data :
+class Transform_Client_Data:
 
-    def transform_client_data(self, filename) :
+    def transform_client_data(self, filename):
         data_transformer = DataTransformation(filename)
         data_transformer.change_hypen()
 

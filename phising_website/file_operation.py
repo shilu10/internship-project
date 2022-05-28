@@ -2,7 +2,7 @@ import glob
 import shutil, os
 from application_logger import logger
 
-class File_Operation:
+class FileOperation:
 
     def __init__(self, type_of_data):
         self.type_of_data = type_of_data
@@ -14,20 +14,20 @@ class File_Operation:
             Folder Names -> good_Data/, bad_Data/
             """
             try :
-                if self.type_of_data == "training" :
+                if self.type_of_data == "training":
                     parent_directory = "training_data_segregation/"
                 else :
                     parent_directory = "testing_data_segregation/"
 
                 path = os.path.join(parent_directory, "good_data/")
-                if not os.path.isdir(path) :
+                if not os.path.isdir(path):
                     os.makedirs(path)
 
                 path = os.path.join(parent_directory, "bad_data/")
-                if not os.path.isdir(path) :
+                if not os.path.isdir(path):
                     os.makedirs(path)
 
-            except OSError as error :
+            except OSError as error:
                 self.logger.log("file_operations_logs", "file_operations.log", "error", f"Error while creating the Folder : {str(error)} in {self.type_of_data} phase")
                 raise error
 
@@ -60,11 +60,11 @@ class File_Operation:
         """
         This Method is used to move the bad files into the archive directory from the bad directory. 
         """
-        try :
+        try:
             if self.type_of_data == "training":
                 parent_folder = "training_data_segregation/bad_data/"
                 destination_path = "bad_training_data_archive/"
-            else :
+            else:
                 parent_folder = "testing_data_segregation/bad_Data/"
                 destination_path = "bad_testing_data_archive/"
             
@@ -73,12 +73,12 @@ class File_Operation:
                 
             files = os.listdir(parent_folder)
             
-            for file in files :
+            for file in files:
                 shutil.move(parent_folder + file, destination_path)
         
         except OSError as error:
             self.logger.log("file_operations_logs", "file_operations.log", "error", f"Error occured while moving the bad files to archive directories in {self.type_of_data} phase!!")
             
-        else :
+        else:
             self.logger.log("file_operations_logs", "file_operations.log", "info", f"moving the bad files to archive directories in {self.type_of_data} phase!!")
 
