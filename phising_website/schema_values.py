@@ -3,7 +3,7 @@ import os
 import json
 
 
-class Client_Rawdata:
+class ClientRawData:
     
     #  file : str
     def __init__(self, type_of_data : str) -> None:

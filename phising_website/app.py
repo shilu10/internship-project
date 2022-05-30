@@ -47,7 +47,7 @@ def testing():
 
         # validating the raw data from the client.
         testing_data_validator = TestingDataValidator()
-        testing_data_validator.validate_training_data(filename)
+        testing_data_validator.validate_testing_data(filename)
 
         file_operation_obj = FileOperation("testing")
 
@@ -55,7 +55,7 @@ def testing():
         file_operation_obj.directory_creation()
     
 
-        file_operation_obj.deletion_of_good_files()
+       # file_operation_obj.deletion_of_good_files()
 
         #moving the bad files to the archive folder
         file_operation_obj.moving_bad_files_to_archive()

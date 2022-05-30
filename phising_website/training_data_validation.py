@@ -1,11 +1,11 @@
 from application_logger import logger
-from schema_values import Client_Rawdata
-from file_operation import File_Operation
+from schema_values import ClientRawData
+from file_operation import FileOperation
 from raw_data_validation import RawDataValidator
 from client_data_transformation import DataTransformation
 from db import *
 
-class Training_data_validator:
+class TrainingDataValidator:
 
     def __init__(self):
         self.type_of_data = "training" 
@@ -14,7 +14,7 @@ class Training_data_validator:
 
     def validate_training_data(self, filename):
          # Getting the predefined schema values from the schema files.
-        schema_obj = Client_Rawdata(self.type_of_data)
+        schema_obj = ClientRawData(self.type_of_data)
 
         #number_of_columns, columns_name, length_of_datestamp, length_of_timestamp = schema_obj.values_for_validation()
         number_of_columns, columns_name, length_of_datestamp, length_of_timestamp = schema_obj.values_for_validation()
@@ -30,7 +30,7 @@ class Training_data_validator:
         validator_obj.validate_file_properties(self.file_path, filename, number_of_columns, filename_pattern, length_of_datestamp, length_of_timestamp, self.type_of_data, columns_name)
 
         # doing composition.
-        client_data_transformer = Transform_Client_Data()
+        client_data_transformer = TransformClientData()
         client_data_transformer.transform_client_data(filename)
 
         # for creation the table in the db
@@ -44,7 +44,7 @@ class Training_data_validator:
         db_operations.create_csv()
 
 
-class Transform_Client_Data:
+class TransformClientData:
 
     def transform_client_data(self, filename):
         data_transformer = DataTransformation(filename)
