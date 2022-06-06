@@ -3,6 +3,7 @@ from file_handler import FileHandler
 from training_data_validation import TrainingDataValidator 
 from testing_data_validation import TestingDataValidator
 from file_operation import FileOperation
+from training_data_preprocessing import TrainingDataPreprocessing
 
 
 app = Flask(__name__, template_folder = "templates") 
@@ -32,6 +33,17 @@ def training():
 
         #moving the bad files to the archive folder
         file_operation_obj.moving_bad_files_to_archive()
+
+        # preprocessing of the validated client data.
+        training_data_preprocessor = TrainingDataPreprocessing(filename)
+
+        # feature selection -> clustering
+        training_data_preprocessor.feature_selection()
+        training_data_preprocessor.clustering()
+
+        # creating a csvfile out of preprocessed data
+
+
     
     return render_template('index.html')
 
