@@ -42,6 +42,10 @@ def training():
         training_data_preprocessor.clustering()
 
         # creating a csvfile out of preprocessed data
+        training_data_preprocessor.csv_from_preprocessed_data()
+
+        # adding the data to the db.
+        training_data_preprocessor.db_operations()
 
 
     

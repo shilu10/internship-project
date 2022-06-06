@@ -5,6 +5,7 @@ from raw_data_validation import RawDataValidator
 from client_data_transformation import DataTransformation
 from db import *
 
+
 class TrainingDataValidator:
 
     def __init__(self):
@@ -20,8 +21,8 @@ class TrainingDataValidator:
         number_of_columns, columns_name, length_of_datestamp, length_of_timestamp = schema_obj.values_for_validation()
         filename_pattern = schema_obj.regex_pattern_creation()
 
-    
-        # validates the data.
+        # Data Ingestion Processing!!!!
+        # validates the data of the client
         validator_obj = RawDataValidator()
 
         self.logger.log("general_logs", "general.log", "error", "Validation of the Training Data Started..")
@@ -43,6 +44,9 @@ class TrainingDataValidator:
         # convert the table values into csv 
         db_operations.create_csv()
 
+        # Machine Learning Lifecycle(EdA, FeatureEngineering, FeatureSelection)
+       
+        # 
 
 class TransformClientData:
 
