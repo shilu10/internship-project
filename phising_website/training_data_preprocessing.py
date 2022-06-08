@@ -27,7 +27,7 @@ class TrainingDataPreprocessing:
                 selected_cols = pickle.load(f)
                 self.selected_cols = selected_cols
                 # reading the file from the db_training_files.
-            validated_client_data = pd.read_csv(f'db_training_files/{self.filename}')
+            validated_client_data = pd.read_csv(f'training_files_from_db/{self.filename}')
             y = validated_client_data['phishing']
             validated_client_data = validated_client_data[selected_cols]
             X = pd.DataFrame(validated_client_data)
@@ -89,7 +89,7 @@ class TrainingDataPreprocessing:
     def db_operations(self): 
         self.logger.log("general_logs", "general.log", "info", "Started the db operations for preprocessed client data")
         try: 
-            db_opr = DataBaseOperations(self.selected_cols, 'preprocessed_data.csv') 
+            db_opr = DataBaseOperations(self.selected_cols, 'preprocessed_data.csv', "preprocessed_files_from_db/") 
             db_opr.create_table()
             db_opr.insert_values()
             db_opr.create_csv()
