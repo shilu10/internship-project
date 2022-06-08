@@ -27,12 +27,6 @@ def training():
         # validating the raw data from the client.
         training_data_validator = TrainingDataValidator()
         training_data_validator.validate_training_data(filename)
-    
-
-        file_operation_obj.deletion_of_good_files()
-
-        #moving the bad files to the archive folder
-        file_operation_obj.moving_bad_files_to_archive()
 
         # preprocessing of the validated client data.
         training_data_preprocessor = TrainingDataPreprocessing(filename)
@@ -46,6 +40,12 @@ def training():
 
         # adding the data to the db.
         training_data_preprocessor.db_operations()
+
+        # Deleting the files from the trainingdata directory
+        file_operation_obj.deletion_of_good_files()
+
+        #moving the bad files to the archive folder
+        file_operation_obj.moving_bad_files_to_archive()
 
 
     

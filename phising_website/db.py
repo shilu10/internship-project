@@ -25,7 +25,7 @@ class DBConnection:
 
 class DataBaseOperations:
     
-    def __init__(self, column_names, filename):
+    def __init__(self, column_names, filename, dir_to_save):
 
         self.column_names = column_names
         self.filename = filename
@@ -33,9 +33,9 @@ class DataBaseOperations:
         self.db_connection = DBConnection(self.filename)
         self.good_file_folder = "training_data_segregation/good_data/"
         self.bad_file_folder = "training_data_segregation/bad_data/"
-        self.path = Path("db_training_files/")
+        self.path = Path(dir_to_save)
         self.path.mkdir(parents = True, exist_ok = True)
-        self.training_file_from_db = "db_training_files/"
+        self.training_file_from_db = dir_to_save
 
     def create_table(self):
         connection = self.db_connection.connect()
