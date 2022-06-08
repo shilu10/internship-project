@@ -1,12 +1,90 @@
-info : 2022-05-28 : 14:03:56 : Moving the Client file to the client_files_training/ directory.... 
-error : 2022-05-28 : 14:03:56 : Validation of the Training Data Started.. 
-info : 2022-05-28 : 14:04:01 : Filename schema is valid. Moving the file into good directory training 
-info : 2022-05-28 : 14:04:01 : Started the data transformation for the Client Data... 
-error : 2022-05-28 : 14:04:01 : Probelm occured during the  data transformation for the Client Data... 
-info : 2022-05-30 : 12:53:32 : Moving the Client file to the client_files_testing/ directory.... 
-info : 2022-05-30 : 12:54:52 : Moving the Client file to the client_files_testing/ directory.... 
-error : 2022-05-30 : 12:54:52 : Validation of the Testing Data Started.. 
-info : 2022-05-30 : 12:55:02 : Filename schema is valid. Moving the file into good directory testing 
-info : 2022-05-30 : 12:56:29 : Moving the Client file to the client_files_testing/ directory.... 
-error : 2022-05-30 : 12:56:29 : Validation of the Testing Data Started.. 
-info : 2022-05-30 : 12:56:36 : Filename schema is valid. Moving the file into good directory testing 
+info : 2022-06-08 : 13:36:47 : Moving the Client file to the client_files_training/ directory.... 
+error : 2022-06-08 : 13:36:47 : Validation of the Training Data Started.. 
+info : 2022-06-08 : 13:36:55 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-06-08 : 13:36:55 : Started the data transformation for the Client Data... 
+error : 2022-06-08 : 13:36:55 : Probelm occured during the  data transformation for the Client Data... 
+info : 2022-06-08 : 13:37:25 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-06-08 : 13:37:29 : Error While Selecting the features in feature selection 'phising' 
+info : 2022-06-08 : 13:37:29 : Started the clustering process 
+error : 2022-06-08 : 13:37:29 : Error during the process of clustering 
+info : 2022-06-08 : 13:37:29 : Creating a csv file from the preprocessed client data 
+error : 2022-06-08 : 13:37:29 : Error while creating a csv file from the preprocessed client data 
+info : 2022-06-08 : 13:37:29 : Started the db operations for preprocessed client data 
+error : 2022-06-08 : 13:37:29 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'training_data_segregation/good_data/preprocessed_data.csv' 
+info : 2022-06-08 : 13:40:48 : Moving the Client file to the client_files_training/ directory.... 
+error : 2022-06-08 : 13:40:48 : Validation of the Training Data Started.. 
+info : 2022-06-08 : 13:40:52 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-06-08 : 13:40:53 : Started the data transformation for the Client Data... 
+error : 2022-06-08 : 13:40:53 : Probelm occured during the  data transformation for the Client Data... 
+info : 2022-06-08 : 13:41:20 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-06-08 : 13:41:23 : Error While Selecting the features in feature selection 'phising' 
+info : 2022-06-08 : 13:41:23 : Started the clustering process 
+error : 2022-06-08 : 13:41:23 : Error during the process of clustering 
+info : 2022-06-08 : 13:41:23 : Creating a csv file from the preprocessed client data 
+error : 2022-06-08 : 13:41:23 : Error while creating a csv file from the preprocessed client data 
+info : 2022-06-08 : 13:41:23 : Started the db operations for preprocessed client data 
+error : 2022-06-08 : 13:41:23 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'training_data_segregation/good_data/preprocessed_data.csv' 
+info : 2022-06-08 : 13:47:39 : Moving the Client file to the client_files_training/ directory.... 
+error : 2022-06-08 : 13:47:39 : Validation of the Training Data Started.. 
+info : 2022-06-08 : 13:47:45 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-06-08 : 13:47:45 : Started the data transformation for the Client Data... 
+error : 2022-06-08 : 13:47:45 : Probelm occured during the  data transformation for the Client Data... 
+info : 2022-06-08 : 13:48:10 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-06-08 : 13:48:13 : Error While Selecting the features in feature selection 'phising' 
+info : 2022-06-08 : 13:48:13 : Started the clustering process 
+error : 2022-06-08 : 13:48:13 : Error during the process of clustering 
+info : 2022-06-08 : 13:48:13 : Creating a csv file from the preprocessed client data 
+error : 2022-06-08 : 13:48:13 : Error while creating a csv file from the preprocessed client data 
+info : 2022-06-08 : 13:48:13 : Started the db operations for preprocessed client data 
+error : 2022-06-08 : 13:48:13 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'training_data_segregation/good_data/preprocessed_data.csv' 
+info : 2022-06-08 : 13:50:18 : Moving the Client file to the client_files_training/ directory.... 
+error : 2022-06-08 : 13:50:18 : Validation of the Training Data Started.. 
+info : 2022-06-08 : 13:50:23 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-06-08 : 13:50:23 : Started the data transformation for the Client Data... 
+error : 2022-06-08 : 13:50:23 : Probelm occured during the  data transformation for the Client Data... 
+info : 2022-06-08 : 13:50:48 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-06-08 : 13:50:51 : Error While Selecting the features in feature selection 'phising' 
+info : 2022-06-08 : 13:50:51 : Started the clustering process 
+error : 2022-06-08 : 13:50:51 : Error during the process of clustering 
+info : 2022-06-08 : 13:50:51 : Creating a csv file from the preprocessed client data 
+error : 2022-06-08 : 13:50:51 : Error while creating a csv file from the preprocessed client data 
+info : 2022-06-08 : 13:50:51 : Started the db operations for preprocessed client data 
+error : 2022-06-08 : 13:50:51 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'training_data_segregation/good_data/preprocessed_data.csv' 
+info : 2022-06-08 : 13:55:28 : Moving the Client file to the client_files_training/ directory.... 
+error : 2022-06-08 : 13:55:28 : Validation of the Training Data Started.. 
+info : 2022-06-08 : 13:55:34 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-06-08 : 13:55:34 : Started the data transformation for the Client Data... 
+error : 2022-06-08 : 13:55:34 : Probelm occured during the  data transformation for the Client Data... 
+info : 2022-06-08 : 13:56:03 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-06-08 : 13:56:13 : Error While Selecting the features in feature selection 'phising' 
+info : 2022-06-08 : 13:56:13 : Started the clustering process 
+error : 2022-06-08 : 13:56:13 : Error during the process of clustering 
+info : 2022-06-08 : 13:56:13 : Creating a csv file from the preprocessed client data 
+error : 2022-06-08 : 13:56:13 : Error while creating a csv file from the preprocessed client data 
+info : 2022-06-08 : 13:56:13 : Started the db operations for preprocessed client data 
+error : 2022-06-08 : 13:56:13 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'training_data_segregation/good_data/preprocessed_data.csv' 
+info : 2022-06-08 : 13:56:14 : Moving the Client file to the client_files_training/ directory.... 
+error : 2022-06-08 : 13:56:14 : Validation of the Training Data Started.. 
+info : 2022-06-08 : 13:56:19 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-06-08 : 13:56:19 : Started the data transformation for the Client Data... 
+error : 2022-06-08 : 13:56:19 : Probelm occured during the  data transformation for the Client Data... 
+info : 2022-06-08 : 13:56:44 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-06-08 : 13:56:50 : Error While Selecting the features in feature selection 'phising' 
+info : 2022-06-08 : 13:56:50 : Started the clustering process 
+error : 2022-06-08 : 13:56:50 : Error during the process of clustering 
+info : 2022-06-08 : 13:56:50 : Creating a csv file from the preprocessed client data 
+error : 2022-06-08 : 13:56:50 : Error while creating a csv file from the preprocessed client data 
+info : 2022-06-08 : 13:56:50 : Started the db operations for preprocessed client data 
+error : 2022-06-08 : 13:56:50 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'training_data_segregation/good_data/preprocessed_data.csv' 
+info : 2022-06-08 : 14:10:37 : Moving the Client file to the client_files_training/ directory.... 
+error : 2022-06-08 : 14:10:37 : Validation of the Training Data Started.. 
+info : 2022-06-08 : 14:10:45 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-06-08 : 14:10:45 : Started the data transformation for the Client Data... 
+error : 2022-06-08 : 14:10:45 : Probelm occured during the  data transformation for the Client Data... 
+info : 2022-06-08 : 14:11:13 : Feature Selection of Validated Client Training Data Started!! 
+info : 2022-06-08 : 14:11:15 : Completed the process of Feature Selection 
+info : 2022-06-08 : 14:11:15 : Started the clustering process 
+info : 2022-06-08 : 14:11:20 : Completed the clustering process 
+info : 2022-06-08 : 14:11:20 : Creating a csv file from the preprocessed client data 
+info : 2022-06-08 : 14:11:23 : Started the db operations for preprocessed client data 
+info : 2022-06-08 : 14:11:34 : Successfully created the training data from the client data. 

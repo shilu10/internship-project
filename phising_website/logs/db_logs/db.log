@@ -1,20 +1,108 @@
-info : 2022-05-28 : 14:04:01 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-28 : 14:04:06 : Table named training created successfully in phising_08012020_120000.csv 
-info : 2022-05-28 : 14:04:06 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-28 : 14:04:06 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-28 : 14:04:14 : Values are inserted into the table of training in phising_08012020_120000.csv 
-info : 2022-05-28 : 14:04:14 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-05-28 : 14:04:14 : Started the db connection to phising_08012020_120000.db 
-info : 2022-05-28 : 14:04:30 : Successfully converted the table values into csv file and saved in the db_training_dir 
-info : 2022-05-28 : 14:04:30 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-06-06 : 13:35:53 : Started the db connection to preprocessed_data.db 
-error : 2022-06-06 : 13:35:53 : Error while creating training in preprocessed_data.csv Database 
-info : 2022-06-06 : 13:35:53 : Closed the db connection to preprocessed_data.csv 
-info : 2022-06-06 : 13:37:23 : Started the db connection to preprocessed_data.db 
-info : 2022-06-06 : 13:37:23 : Closed the db connection to preprocessed_data.csv 
-info : 2022-06-06 : 13:38:55 : Started the db connection to preprocessed_data.db 
-info : 2022-06-06 : 13:39:04 : Values are inserted into the table of training in preprocessed_data.csv 
-info : 2022-06-06 : 13:39:04 : Closed the db connection to preprocessed_data.csv 
-info : 2022-06-06 : 13:39:19 : Started the db connection to preprocessed_data.db 
-info : 2022-06-06 : 13:39:41 : Successfully converted the table values into csv file and saved in the db_training_dir 
-info : 2022-06-06 : 13:39:41 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:36:55 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:36:56 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:36:56 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:36:56 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:37:07 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:37:07 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:37:07 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:37:25 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-08 : 13:37:25 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:37:29 : Started the db connection to preprocessed_data.db 
+error : 2022-06-08 : 13:37:29 : Error while creating training in preprocessed_data.csv Database 
+info : 2022-06-08 : 13:37:29 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:37:29 : Started the db connection to preprocessed_data.db 
+info : 2022-06-08 : 13:37:29 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:40:53 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:40:53 : Table named training created successfully in phising_08012020_120000.csv Database 
+info : 2022-06-08 : 13:40:53 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:40:53 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:40:53 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:41:02 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:41:02 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:41:03 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:41:20 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-08 : 13:41:20 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:41:23 : Started the db connection to preprocessed_data.db 
+error : 2022-06-08 : 13:41:23 : Error while creating training in preprocessed_data.csv Database 
+info : 2022-06-08 : 13:41:23 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:41:23 : Started the db connection to preprocessed_data.db 
+info : 2022-06-08 : 13:41:23 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:47:45 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:47:45 : Table named training created successfully in phising_08012020_120000.csv Database 
+info : 2022-06-08 : 13:47:45 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:47:45 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:47:45 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:47:54 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:47:54 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:47:54 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:48:10 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-08 : 13:48:10 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:48:13 : Started the db connection to preprocessed_data.db 
+error : 2022-06-08 : 13:48:13 : Error while creating training in preprocessed_data.csv Database 
+info : 2022-06-08 : 13:48:13 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:48:13 : Started the db connection to preprocessed_data.db 
+info : 2022-06-08 : 13:48:13 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:50:23 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:50:23 : Table named training created successfully in phising_08012020_120000.csv Database 
+info : 2022-06-08 : 13:50:23 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:50:23 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:50:23 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:50:32 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:50:32 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:50:32 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:50:48 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-08 : 13:50:48 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:50:51 : Started the db connection to preprocessed_data.db 
+error : 2022-06-08 : 13:50:51 : Error while creating training in preprocessed_data.csv Database 
+info : 2022-06-08 : 13:50:51 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:50:51 : Started the db connection to preprocessed_data.db 
+info : 2022-06-08 : 13:50:51 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:55:34 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:55:34 : Table named training created successfully in phising_08012020_120000.csv Database 
+info : 2022-06-08 : 13:55:34 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:55:34 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:55:34 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:55:45 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:55:45 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:55:45 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:56:03 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-08 : 13:56:03 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:56:13 : Started the db connection to preprocessed_data.db 
+error : 2022-06-08 : 13:56:13 : Error while creating training in preprocessed_data.csv Database 
+info : 2022-06-08 : 13:56:13 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:56:13 : Started the db connection to preprocessed_data.db 
+info : 2022-06-08 : 13:56:13 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:56:19 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:56:19 : Table named training created successfully in phising_08012020_120000.csv Database 
+info : 2022-06-08 : 13:56:19 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:56:19 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:56:19 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:56:28 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-06-08 : 13:56:28 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:56:28 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 13:56:44 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-08 : 13:56:44 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 13:56:50 : Started the db connection to preprocessed_data.db 
+error : 2022-06-08 : 13:56:50 : Error while creating training in preprocessed_data.csv Database 
+info : 2022-06-08 : 13:56:50 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 13:56:50 : Started the db connection to preprocessed_data.db 
+info : 2022-06-08 : 13:56:50 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 14:10:45 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 14:10:45 : Table named training created successfully in phising_08012020_120000.csv Database 
+info : 2022-06-08 : 14:10:45 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-06-08 : 14:10:45 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 14:10:45 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 14:10:55 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-06-08 : 14:10:55 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 14:10:55 : Started the db connection to phising_08012020_120000.db 
+info : 2022-06-08 : 14:11:13 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-08 : 14:11:13 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-08 : 14:11:23 : Started the db connection to preprocessed_data.db 
+error : 2022-06-08 : 14:11:23 : Error while creating training in preprocessed_data.csv Database 
+info : 2022-06-08 : 14:11:23 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 14:11:23 : Started the db connection to preprocessed_data.db 
+info : 2022-06-08 : 14:11:27 : Values are inserted into the table of training in preprocessed_data.csv 
+info : 2022-06-08 : 14:11:27 : Closed the db connection to preprocessed_data.csv 
+info : 2022-06-08 : 14:11:27 : Started the db connection to preprocessed_data.db 
+info : 2022-06-08 : 14:11:34 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-08 : 14:11:34 : Closed the db connection to preprocessed_data.csv 

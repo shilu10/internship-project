@@ -28,9 +28,10 @@ class TrainingDataPreprocessing:
                 self.selected_cols = selected_cols
                 # reading the file from the db_training_files.
             validated_client_data = pd.read_csv(f'db_training_files/{self.filename}')
+            y = validated_client_data['phishing']
             validated_client_data = validated_client_data[selected_cols]
             X = pd.DataFrame(validated_client_data)
-            y = validated_client_data['phising']
+            
             self.X = X
             self.y = y
             self.logger.log("general_logs", "general.log", "info", "Completed the process of Feature Selection")
