@@ -70,7 +70,6 @@ def testing():
         # creation of good data and bad data folder.
         file_operation_obj.directory_creation()
     
-
        # file_operation_obj.deletion_of_good_files()
 
         #moving the bad files to the archive folder
