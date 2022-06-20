@@ -27,7 +27,7 @@ class TrainingDataPreprocessing:
                 selected_cols = pickle.load(f)
                 self.selected_cols = selected_cols
                 # reading the file from the db_training_files.
-            validated_client_data = pd.read_csv(f'training_files_from_db/{self.filename}')
+            validated_client_data = pd.read_csv(f'training_files_from_d/{self.filename}')
             y = validated_client_data['phishing']
             validated_client_data = validated_client_data[selected_cols]
             X = pd.DataFrame(validated_client_data)
