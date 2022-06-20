@@ -16,6 +16,7 @@ class ModelBuilding:
         self.results = {}
         self.cluster_dic = {}
         self.best_models = {}
+        self.trained_models = {}
 
     def prepare_data_from_clusters(self) -> None: 
         try:
@@ -104,9 +105,38 @@ class ModelBuilding:
     def train(self): 
         try:
             self.logger.log("training_logs", "train.log", "info", "Model Building of Client Training Data Started!!")
-        
+
+            for cluster_no, cluster_df in self.cluster_dic.items():
+                y = cluster_df.labels
+                cluster_df.drop('labels', inplace=True, axis=1)
+                X = cluster_df 
+                model_name = self.best_models[cluster_no].model_name
+                model_params = self.best_models[cluster_no].params
+
+                if model_name == "rf_classifier": 
+                    random_forest = RandomForestClassifier(
+                        criterion=model_params['criterion'],
+                        n_estimators=model_params['n_estimators'],
+                        max_depth=model_params['max_depth'],
+                        random_state=model_params['random_state'],
+                        oob_score=model_params['oob_score']
+                    )
+                    with open(f"random_forest_{cluster_no}", 'wb') as f:
+                        pickle.dump(random_forest, f)
+
+                else: 
+                    gradient_boost = GradientBoostingClassifier(
+                        criterion=model_params['criterion'],
+                        n_estimators=model_params['n_estimators'],
+                        max_depth=model_params['max_depth'],
+                        random_state=model_params['random_state'],
+                        loss=model_params['loss']
+                    )
+                    with open(f"gradient_boost_{cluster_no}", 'wb') as f:
+                        pickle.dump(gradient_boost, f)
+
         except Exception as error: 
-            pass 
+             self.logger.log("training_logs", "train.log", "error", f"Error while training the model {error}")
 
         else:
-            pass
+            self.logger.log("training_logs", "train.log", "info", f"Compeleted the training of the model!!")
