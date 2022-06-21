@@ -89,10 +89,11 @@ class TrainingDataPreprocessing:
     def db_operations(self): 
         self.logger.log("general_logs", "general.log", "info", "Started the db operations for preprocessed client data")
         try: 
-            db_opr = DataBaseOperations(self.selected_cols, 'preprocessed_data.csv', "preprocessed_files_from_db/") 
+            db_opr = DataBaseOperations(self.selected_cols, f"preprocessed_data_{self.filename}", "preprocessed_files_from_db/") 
             db_opr.create_table()
             db_opr.insert_values()
             db_opr.create_csv()
             self.logger.log("general_logs", "general.log", "info", "Successfully created the training data from the client data.")
         except Exception as error: 
             self.logger.log("general_logs", "general.log", "error", f"error during db operations for preprocessed client data {error}")
+

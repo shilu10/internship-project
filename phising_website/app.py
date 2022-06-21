@@ -4,6 +4,7 @@ from training_data_validation import TrainingDataValidator
 from testing_data_validation import TestingDataValidator
 from file_operation import FileOperation
 from training_data_preprocessing import TrainingDataPreprocessing
+from model_building import ModelBuilding
 
 
 app = Flask(__name__, template_folder = "templates") 
@@ -38,8 +39,13 @@ def training():
         # creating a csvfile out of preprocessed data
         training_data_preprocessor.csv_from_preprocessed_data()
 
-        # adding the data to the db.
+        # adding the data to the db, and also creating a csv out of it.
         training_data_preprocessor.db_operations()
+
+        # training a model
+        model = ModelBuilding(f"preprocessed_data_{filename}")
+        model.hyperparameter_tuning()
+        model.train()
 
         # Deleting the files from the trainingdata directory
         file_operation_obj.deletion_of_good_files()
