@@ -4,7 +4,7 @@ import pandas as pd
 class DataTransformation:
     def __init__(self ,filename):
         self.logger = logger.Logger()
-        self.path = f'training_data_segregation/good_Data/{filename}'
+        self.path = f'testing_data_segregation/good_Data/{filename}'
 
     def change_hypen(self):
         """

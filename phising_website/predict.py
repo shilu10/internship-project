@@ -14,7 +14,7 @@ class Predict:
     def __init__(self, filename): 
         self.logger = logger.Logger()
         self.filename = filename 
-        self.filepath = f"testing_data_segregation/good_data/{self.filename}"
+        self.filepath = f"testing_files_from_db/{self.filename}"
         path = Path('prediction_files/')
         path.mkdir(parents=True, exist_ok=True)
         
@@ -59,11 +59,11 @@ class Predict:
             pred_df = pd.concat([cluster0_pred_df, cluster1_pred_df, cluster2_pred_df], axis=0)
             pred_df = pred_df.sort_index()
             pred_df.to_csv(f"{self.filename.split('.')[0]}_prediction.csv", index=True)
-            shutil.copy(f"{self.filename.split('.')[0]}_prediction.csv", "prediction_files")
+            shutil.move(f"{self.filename.split('.')[0]}_prediction.csv", "prediction_files")
+            self.logger.log("testing_logs", "testing.log", "info", "Completed the prediction of the client data and also moved the csv file to prediction_files/ directory")
+
             return True
 
         except Exception as error:
             self.logger.log("testing_logs", "testing.log", "error", f"Error while prediction {error}")
-            
-        else: 
-            self.logger.log("testing_logs", "testing.log", "info", "Completed the prediction of the client data and also moved the csv file to prediction_files/ directory")
+             
