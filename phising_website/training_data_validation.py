@@ -34,7 +34,7 @@ class TrainingDataValidator:
         client_data_transformer = TransformClientData()
         client_data_transformer.transform_client_data(filename)
 
-        # for creation the table in the db
+        
         db_operations = DataBaseOperations(columns_name, filename, "training_files_from_db/")
         db_operations.create_table()
 

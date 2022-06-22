@@ -36,3 +36,9 @@ info : 2022-06-08 : 14:29:21 : Completed the clustering process
 info : 2022-06-08 : 14:29:21 : Creating a csv file from the preprocessed client data 
 info : 2022-06-08 : 14:29:23 : Started the db operations for preprocessed client data 
 info : 2022-06-08 : 14:29:36 : Successfully created the training data from the client data. 
+info : 2022-06-22 : 14:01:46 : Moving the Client file to the client_files_testing/ directory.... 
+error : 2022-06-22 : 14:01:47 : Validation of the Testing Data Started.. 
+info : 2022-06-22 : 14:01:58 : Filename schema is valid. Moving the file into good directory testing 
+info : 2022-06-22 : 14:03:28 : Moving the Client file to the client_files_testing/ directory.... 
+error : 2022-06-22 : 14:03:28 : Validation of the Testing Data Started.. 
+info : 2022-06-22 : 14:03:35 : Filename schema is valid. Moving the file into good directory testing 

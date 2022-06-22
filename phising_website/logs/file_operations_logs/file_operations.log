@@ -7,3 +7,8 @@ info : 2022-06-08 : 14:27:11 : moving the bad files to archive directories in tr
 info : 2022-06-08 : 14:28:42 : Created the Directories successfully!! in training phase 
 info : 2022-06-08 : 14:29:36 : Deleted the file successfully in training phase!! 
 info : 2022-06-08 : 14:29:36 : moving the bad files to archive directories in training phase!! 
+info : 2022-06-22 : 14:01:46 : Created the Directories successfully!! in testing phase 
+info : 2022-06-22 : 14:01:47 : Created the Directories successfully!! in testing phase 
+info : 2022-06-22 : 14:03:28 : Created the Directories successfully!! in testing phase 
+info : 2022-06-22 : 14:03:28 : Created the Directories successfully!! in testing phase 
+error : 2022-06-22 : 14:03:36 : Error occured while moving the bad files to archive directories in testing phase!! 

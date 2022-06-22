@@ -36,7 +36,6 @@ class ModelBuilding:
         else:
             self.logger.log("training_logs", "train.log", "info", "Successfully created data for each clusters!")
 
-
     def hyperparameter_tuning(self) -> None:
         try: 
             self.logger.log("training_logs", "train.log", "info", "HyperParameter Tuning for each clusters data is started")
@@ -105,7 +104,6 @@ class ModelBuilding:
     def train(self): 
         try:
             self.logger.log("training_logs", "train.log", "info", "Model Building of Client Training Data Started!!")
-
             for cluster_no, cluster_df in self.cluster_dic.items():
                 y = cluster_df.labels
                 cluster_df.drop('labels', inplace=True, axis=1)
