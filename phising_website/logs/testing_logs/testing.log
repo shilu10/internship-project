@@ -1,1 +1,19 @@
 info : 2022-06-22 : 14:03:36 : Started the prediction!! 
+info : 2022-06-22 : 14:31:02 : Started the prediction!! 
+error : 2022-06-22 : 14:31:02 : Error while prediction [Errno 2] No such file or directory: 'testing_files_from_db/phising_21062022_120000.csv' 
+info : 2022-06-22 : 14:31:28 : Started the prediction!! 
+error : 2022-06-22 : 14:31:29 : Error while prediction [Errno 2] No such file or directory: 'testing_files_from_db/phising_21062022_120000.csv' 
+info : 2022-06-22 : 14:34:08 : Started the prediction!! 
+error : 2022-06-22 : 14:34:14 : Error while prediction Destination path 'prediction_files/phising_21062022_120000_prediction.csv' already exists 
+info : 2022-06-23 : 12:38:14 : Started the prediction!! 
+error : 2022-06-23 : 12:38:26 : Error while prediction Destination path 'prediction_files/phising_21062022_120000_prediction.csv' already exists 
+info : 2022-06-23 : 12:45:05 : Started the prediction!! 
+error : 2022-06-23 : 12:45:11 : Error while prediction Destination path 'prediction_files/phising_21062022_120000_prediction.csv' already exists 
+info : 2022-06-23 : 12:47:02 : Started the prediction!! 
+error : 2022-06-23 : 12:47:09 : Error while prediction Destination path 'prediction_files/phising_21062022_120000_prediction.csv' already exists 
+info : 2022-06-23 : 12:48:52 : Started the prediction!! 
+error : 2022-06-23 : 12:48:58 : Error while prediction Destination path 'prediction_files/phising_21062022_120000_prediction.csv' already exists 
+info : 2022-06-23 : 12:52:44 : Started the prediction!! 
+error : 2022-06-23 : 12:52:50 : Error while prediction Destination path 'prediction_files/phising_21062022_120000_prediction.csv' already exists 
+info : 2022-06-23 : 12:55:34 : Started the prediction!! 
+info : 2022-06-23 : 12:55:40 : Completed the prediction of the client data and also moved the csv file to prediction_files/ directory 

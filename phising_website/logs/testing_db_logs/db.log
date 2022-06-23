@@ -1,0 +1,89 @@
+info : 2022-06-22 : 14:30:19 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-22 : 14:30:23 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-22 : 14:30:23 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-22 : 14:30:23 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-22 : 14:30:41 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-22 : 14:30:41 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-22 : 14:30:41 : Started the db connection to phising_21062022_120000.db 
+error : 2022-06-22 : 14:31:02 : Error during the creation of csv file from the values of the db table 
+info : 2022-06-22 : 14:31:02 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-22 : 14:31:02 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-22 : 14:31:02 : Table named testing created successfully in phising_21062022_120000.csv Database 
+info : 2022-06-22 : 14:31:02 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-22 : 14:31:02 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-22 : 14:31:02 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-22 : 14:31:14 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-22 : 14:31:14 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-22 : 14:31:14 : Started the db connection to phising_21062022_120000.db 
+error : 2022-06-22 : 14:31:28 : Error during the creation of csv file from the values of the db table 
+info : 2022-06-22 : 14:31:28 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-22 : 14:33:41 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-22 : 14:33:41 : Table named testing created successfully in phising_21062022_120000.csv Database 
+info : 2022-06-22 : 14:33:41 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-22 : 14:33:41 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-22 : 14:33:41 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-22 : 14:33:51 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-22 : 14:33:51 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-22 : 14:33:51 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-22 : 14:34:08 : Successfully converted the table values into csv file and saved in the testing_files_from_db directory 
+info : 2022-06-22 : 14:34:08 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:37:33 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:37:33 : Table named testing created successfully in phising_21062022_120000.csv Database 
+info : 2022-06-23 : 12:37:33 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:37:33 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:37:33 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:37:53 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:37:53 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:37:53 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:38:14 : Successfully converted the table values into csv file and saved in the testing_files_from_db directory 
+info : 2022-06-23 : 12:38:14 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:44:39 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:44:39 : Table named testing created successfully in phising_21062022_120000.csv Database 
+info : 2022-06-23 : 12:44:39 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:44:39 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:44:39 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:44:49 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:44:49 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:44:49 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:45:05 : Successfully converted the table values into csv file and saved in the testing_files_from_db directory 
+info : 2022-06-23 : 12:45:05 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:46:31 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:46:31 : Table named testing created successfully in phising_21062022_120000.csv Database 
+info : 2022-06-23 : 12:46:31 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:46:31 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:46:31 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:46:44 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:46:44 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:46:44 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:47:02 : Successfully converted the table values into csv file and saved in the testing_files_from_db directory 
+info : 2022-06-23 : 12:47:02 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:48:21 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:48:21 : Table named testing created successfully in phising_21062022_120000.csv Database 
+info : 2022-06-23 : 12:48:21 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:48:21 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:48:21 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:48:36 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:48:36 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:48:36 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:48:52 : Successfully converted the table values into csv file and saved in the testing_files_from_db directory 
+info : 2022-06-23 : 12:48:52 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:52:18 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:52:18 : Table named testing created successfully in phising_21062022_120000.csv Database 
+info : 2022-06-23 : 12:52:18 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:52:18 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:52:18 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:52:28 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:52:28 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:52:28 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:52:44 : Successfully converted the table values into csv file and saved in the testing_files_from_db directory 
+info : 2022-06-23 : 12:52:44 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:55:07 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:55:07 : Table named testing created successfully in phising_21062022_120000.csv Database 
+info : 2022-06-23 : 12:55:07 : Table named testing created successfully in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:55:07 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:55:07 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:55:18 : Values are inserted into the table of training in phising_21062022_120000.csv 
+info : 2022-06-23 : 12:55:18 : Closed the db connection to phising_21062022_120000.csv 
+info : 2022-06-23 : 12:55:18 : Started the db connection to phising_21062022_120000.db 
+info : 2022-06-23 : 12:55:34 : Successfully converted the table values into csv file and saved in the testing_files_from_db directory 
+info : 2022-06-23 : 12:55:34 : Closed the db connection to phising_21062022_120000.csv 

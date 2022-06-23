@@ -1,5 +1,6 @@
 from application_logger import logger
-import os, shutil
+from os.path import exists
+import shutil
 import pandas as pd 
 import pickle 
 import numpy as np
@@ -59,9 +60,10 @@ class Predict:
             pred_df = pd.concat([cluster0_pred_df, cluster1_pred_df, cluster2_pred_df], axis=0)
             pred_df = pred_df.sort_index()
             pred_df.to_csv(f"{self.filename.split('.')[0]}_prediction.csv", index=True)
-            shutil.move(f"{self.filename.split('.')[0]}_prediction.csv", "prediction_files")
+            
+            if not exists(f"prediction_files/{self.filename.split('.')[0]}_prediction.csv"): 
+                shutil.move(f"{self.filename.split('.')[0]}_prediction.csv", "prediction_files")
             self.logger.log("testing_logs", "testing.log", "info", "Completed the prediction of the client data and also moved the csv file to prediction_files/ directory")
-
             return True
 
         except Exception as error:

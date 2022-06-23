@@ -100,7 +100,7 @@ class DataBaseOperations:
         try: 
             connection = self.db_connection.connect()
             db_df = pd.read_sql_query("SELECT * FROM training", connection)
-            db_df.to_csv(self.training_file_from_db + self.filename, index = False)
+            db_df.to_csv(self.testing_files_from_db + self.filename, index = False)
             self.logger.log("testing_db_logs", "db.log", "info", f"Successfully converted the table values into csv file and saved in the testing_files_from_db directory")
         
         except Exception as error:
