@@ -89,10 +89,7 @@ def testing():
         if predict.run():
             return jsonify({"prediction": "success"})
         return jsonify({"prediction": "failure"})
-
-    
     return render_template('index.html')
-
 
 if __name__ == "__main__":
     app.run(port = 15001, debug = True)

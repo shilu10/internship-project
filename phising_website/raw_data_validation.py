@@ -47,7 +47,6 @@ class RawDataValidator:
                 self.logger.log("general_logs", "general.log", "error", f"Number of Columns in the file are not valid. Moving the file into bad Directory {type_of_data}")
                 _error = True
                     
-                    
             if _error == False:
                 self.logger.log("general_logs", "general.log", "info", f"Filename schema is valid. Moving the file into good directory {type_of_data}")
                 

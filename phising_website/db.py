@@ -4,8 +4,48 @@ from application_logger import logger
 import pandas as pd 
 import shutil
 
+
+def abstractfunc(func): 
+  """
+    This will create a abstract class for us, to use in the interface
+  """
+  func.__isabstract__ = True
+  return func
+
+
+class Singleton(type):
+  """
+    This Metaclass is the blueprint for the Logger class, to make it a singleton design pattern.
+  """
+  _instance = {}
+  def __call__(cls, *args, **kwargs): 
+    if cls not in cls._instance:
+      cls._instance[cls]=super(Singleton,cls).__call__(*args, **kwargs)
+    return cls._instance[cls]
+
+
+class IDBConnection(metaclass=Singleton): 
+    @abstractfunc
+    def connect(self): 
+        pass
+
+
+class IDBOperarion(metaclass=Singleton): 
+    @abstractfunc
+    def create_table(self): 
+        pass 
+    
+    @abstractfunc
+    def insert_value(self): 
+        pass 
+
+    @abstractfunc
+    def create_csv(self): 
+        pass
+
+
 # we will have different database file for each csv client files.
-class DBConnection:
+class DBConnection(IDBConnection):
     def __init__(self, filename):
         self.db_name = filename.split('.')[0] + ".db"
         self.path = Path("training_databases/")
@@ -23,7 +63,7 @@ class DBConnection:
             self.logger.log("db_logs", "db.log", "error", f"Error While connecting to the {self.db_name} Database")
             raise error 
 
-class DataBaseOperations:
+class DataBaseOperations(IDBOperarion):
     
     def __init__(self, column_names, filename, dir_to_save):
 
@@ -96,7 +136,6 @@ class DataBaseOperations:
             self.logger.log("db_logs", "db.log", "info", f"Closed the db connection to {self.filename}")
 
     def create_csv(self):
-
         try: 
             connection = self.db_connection.connect()
             db_df = pd.read_sql_query("SELECT * FROM training", connection)
