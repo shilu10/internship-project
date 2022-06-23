@@ -29,12 +29,12 @@ class TestingDataValidator :
             file_operation_obj.directory_creation()
 
             # validates the data.
-            validator_obj = RawDataValidator()
+            validator_obj = RawDataValidator(self.file_path, filename, number_of_columns, filename_pattern, length_of_datestamp, length_of_timestamp, self.type_of_data, columns_name)
 
             self.logger.log("general_logs", "general.log", "error", "Validation of the Testing Data Started..")
 
             # Validating the schema_values and the file values
-            validator_obj.validate_file_properties(self.file_path, filename, number_of_columns, filename_pattern, length_of_datestamp, length_of_timestamp, self.type_of_data, columns_name)
+            validator_obj.validate_file_properties()
 
             # transforming the client data and takes care of the database operations.
             client_data_transformer = TransformClientData()

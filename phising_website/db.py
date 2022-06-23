@@ -95,8 +95,7 @@ class DataBaseOperations(IDBOperarion):
             else :
                 for col_name in self.column_names.keys(): 
                     col_type = self.column_names[col_name]                
-                    try :
-                        
+                    try :      
                         query = f'ALTER TABLE {table_name} ADD COLUMN "{col_name}" {col_type}'
                         cursor.execute(query)
                         connection.commit()
