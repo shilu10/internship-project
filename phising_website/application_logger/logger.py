@@ -1,6 +1,14 @@
 from datetime import datetime
 from pathlib import Path
-import os
+
+
+def abstractfunc(func): 
+  """
+    This will create a abstract class for us, to use in the interface
+  """
+  func.__isabstract__ = True
+  return func
+
 
 class Singleton(type):
   """
@@ -13,7 +21,13 @@ class Singleton(type):
     return cls._instance[cls]
 
 
-class Logger(metaclass=Singleton) :
+class ILogger(metaclass=Singleton): 
+  @abstractfunc
+  def log(self):
+    pass
+
+
+class Logger(ILogger) :
     """
     This class will be used to log the message into the logs folder 
     """

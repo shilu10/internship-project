@@ -1,15 +1,7 @@
-info : 2022-06-23 : 14:27:50 : Started the db connection to phising_08012020_120000.db 
-info : 2022-06-23 : 14:27:50 : Table named training created successfully in phising_08012020_120000.csv Database 
-info : 2022-06-23 : 14:27:50 : Table named training created successfully in phising_08012020_120000.csv 
-info : 2022-06-23 : 14:27:50 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-06-23 : 14:27:50 : Started the db connection to phising_08012020_120000.db 
-info : 2022-06-23 : 14:28:03 : Values are inserted into the table of training in phising_08012020_120000.csv 
-info : 2022-06-23 : 14:28:03 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-06-23 : 14:28:03 : Started the db connection to phising_08012020_120000.db 
-info : 2022-06-23 : 14:28:21 : Successfully converted the table values into csv file and saved in the db_training_dir 
-info : 2022-06-23 : 14:28:21 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-06-23 : 14:28:21 : Started the db connection to preprocessed_data_phising_08012020_120000.db 
-error : 2022-06-23 : 14:28:21 : Error while creating training in preprocessed_data_phising_08012020_120000.csv Database 
-info : 2022-06-23 : 14:28:21 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
-info : 2022-06-23 : 14:28:21 : Started the db connection to preprocessed_data_phising_08012020_120000.db 
-info : 2022-06-23 : 14:28:21 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-06-23 : 14:42:42 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-06-23 : 14:42:42 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-06-23 : 14:42:42 : Started the db connection to preprocessed_data_phising_08012020_120000.db 
+error : 2022-06-23 : 14:42:42 : Error while creating training in preprocessed_data_phising_08012020_120000.csv Database 
+info : 2022-06-23 : 14:42:42 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-06-23 : 14:42:42 : Started the db connection to preprocessed_data_phising_08012020_120000.db 
+info : 2022-06-23 : 14:42:42 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
