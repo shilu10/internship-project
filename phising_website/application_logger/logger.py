@@ -1,7 +1,19 @@
 from datetime import datetime
 from pathlib import Path
-import os 
-class Logger(object) :
+import os
+
+class Singleton(type):
+  """
+    This Metaclass is the blueprint for the Logger class, to make it a singleton design pattern.
+  """
+  _instance = {}
+  def __call__(cls, *args, **kwargs): 
+    if cls not in cls._instance:
+      cls._instance[cls]=super(Singleton,cls).__call__(*args, **kwargs)
+    return cls._instance[cls]
+
+
+class Logger(metaclass=Singleton) :
     """
     This class will be used to log the message into the logs folder 
     """
@@ -15,17 +27,6 @@ class Logger(object) :
         level : what is the level of the log(info, warning, error, critical).
         message : pass the log message.
         """
-        
-      #  os.chdir("/home/adminuser/internship_projects/phising_website/logs")
-        #print(os.getcwd())
-        #path = Path("logs", folder)
-
-        #print(path.exists())
-
-        #if not path.exists() :
-         #   print("ues")
-          #  path.mkdir(parent = True)
-                
         path = Path(f"logs/{folder}")
         path.mkdir(parents = True, exist_ok = True)
         current_moment = datetime.now()
