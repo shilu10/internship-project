@@ -1,15 +1,12 @@
-info : 2022-06-24 : 12:41:54 : Created the Directories successfully!! in training phase 
-info : 2022-06-24 : 12:43:12 : Deleted the file successfully in training phase!! 
-info : 2022-06-24 : 12:43:12 : moving the bad files to archive directories in training phase!! 
-info : 2022-06-24 : 14:16:39 : Created the Directories successfully!! in testing phase 
-info : 2022-06-24 : 14:16:39 : Created the Directories successfully!! in testing phase 
-error : 2022-06-24 : 14:16:40 : Error occured while moving the bad files to archive directories in testing phase!! 
-info : 2022-06-24 : 14:18:59 : Created the Directories successfully!! in testing phase 
-info : 2022-06-24 : 14:18:59 : Created the Directories successfully!! in testing phase 
-error : 2022-06-24 : 14:19:40 : Error occured while moving the bad files to archive directories in testing phase!! 
-info : 2022-06-24 : 14:22:00 : Created the Directories successfully!! in testing phase 
-info : 2022-06-24 : 14:22:00 : Created the Directories successfully!! in testing phase 
-info : 2022-06-24 : 14:22:20 : Created the Directories successfully!! in testing phase 
-info : 2022-06-24 : 14:22:20 : Created the Directories successfully!! in testing phase 
-error : 2022-06-24 : 14:22:45 : Error occured while moving the bad files to archive directories in testing phase!! 
-error : 2022-06-24 : 14:23:08 : Error occured while moving the bad files to archive directories in testing phase!! 
+info : 2022-06-24 : 15:07:22 : Created the Directories successfully!! in training phase 
+info : 2022-06-24 : 15:07:31 : Deleted the file successfully in training phase!! 
+info : 2022-06-24 : 15:07:31 : moving the bad files to archive directories in training phase!! 
+info : 2022-06-24 : 15:14:15 : Created the Directories successfully!! in training phase 
+info : 2022-06-24 : 15:14:23 : Deleted the file successfully in training phase!! 
+info : 2022-06-24 : 15:14:23 : moving the bad files to archive directories in training phase!! 
+info : 2022-06-24 : 15:19:44 : Created the Directories successfully!! in training phase 
+info : 2022-06-24 : 15:20:17 : Deleted the file successfully in training phase!! 
+info : 2022-06-24 : 15:20:17 : moving the bad files to archive directories in training phase!! 
+info : 2022-06-24 : 15:22:00 : Created the Directories successfully!! in training phase 
+info : 2022-06-24 : 15:22:40 : Deleted the file successfully in training phase!! 
+info : 2022-06-24 : 15:22:40 : moving the bad files to archive directories in training phase!! 

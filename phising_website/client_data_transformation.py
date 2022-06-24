@@ -20,7 +20,7 @@ class DataTransformation:
                 new_colname = column.replace('-', '')
                 client_data.rename({column : new_colname}, inplace = True)
 
-            self.logger.log("general_logs", "general.log", "info", f"Successfully completed the data transformation for the Client Data...")
+            self.logger.log("general_logs", "general.log", "info", f"Successfully completed the data transformation for the Client Data...{error}")
         
         except Exception as error:
-            self.logger.log("general_logs", "general.log", "error", f"Probelm occured during the  data transformation for the Client Data...")
+            self.logger.log("general_logs", "general.log", "error", f"Probelm occured during the  data transformation for the Client Data...{error}")
