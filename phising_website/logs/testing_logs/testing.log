@@ -1,0 +1,6 @@
+info : 2022-06-24 : 17:10:21 : Started the prediction!! 
+error : 2022-06-24 : 17:10:24 : Error while prediction [Errno 2] No such file or directory: 'testing_files_from_db/phising_08012022_120000.csv' 
+info : 2022-06-24 : 17:13:27 : Started the prediction!! 
+error : 2022-06-24 : 17:13:28 : Error while prediction [Errno 2] No such file or directory: 'testing_files_from_db/phising_08012022_120000.csv' 
+info : 2022-06-24 : 17:19:13 : Started the prediction!! 
+info : 2022-06-24 : 17:19:20 : Completed the prediction of the client data and also moved the csv file to prediction_files/ directory 

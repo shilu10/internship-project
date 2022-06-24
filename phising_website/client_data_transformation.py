@@ -4,7 +4,7 @@ import pandas as pd
 class DataTransformation:
     def __init__(self ,filename):
         self.logger = logger.Logger()
-        self.path = f'training_data_segregation/good_Data/{filename}'
+        self.path = f'training_data_segregation/good_data/{filename}'
 
     def change_hypen(self):
         """
@@ -20,7 +20,7 @@ class DataTransformation:
                 new_colname = column.replace('-', '')
                 client_data.rename({column : new_colname}, inplace = True)
 
-            self.logger.log("general_logs", "general.log", "info", f"Successfully completed the data transformation for the Client Data...{error}")
+            self.logger.log("general_logs", "general.log", "info", f"Successfully completed the data transformation for the Client Data..")
         
         except Exception as error:
             self.logger.log("general_logs", "general.log", "error", f"Probelm occured during the  data transformation for the Client Data...{error}")

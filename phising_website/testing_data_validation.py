@@ -3,7 +3,7 @@ from schema_values import ClientRawData
 from file_operation import FileOperation
 from raw_data_validation import ValidatorBuilder
 from client_testing_data_transformation import DataTransformation
-from testing_db import DataBaseOperations
+from db import DataBaseOperationsContext, TestingDBConnection, TestingDataBaseOperations
 
 class TestingDataValidator :
     # Class attributes.
@@ -42,14 +42,16 @@ class TestingDataValidator :
             client_data_transformer = TransformClientData()
             client_data_transformer.transform_client_data(filename)
 
-            db_operations = DataBaseOperations(columns_name, filename, "testing_files_from_db/")
-            db_operations.create_table()
+            testing_db_operations = DataBaseOperationsContext(state = TestingDataBaseOperations(columns_name, filename, "training_files_from_db/"))
+
+            testing_db_operations.create_dir()
+            testing_db_operations.create_table()
 
             # for insertion of values into the table 
-            db_operations.insert_values()
+            testing_db_operations.insert_values()
 
             # convert the table values into csv 
-            db_operations.create_csv()
+            testing_db_operations.create_csv()
         
         except Exception as error:
             self.logger.log("general_logs", "general.log", "error", f"Error during the client testing data validation {error}") 

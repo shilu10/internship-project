@@ -185,8 +185,13 @@ class TestingDataBaseOperations(IDBOperarion):
         self.good_file_folder = "testing_data_segregation/good_data/"
         self.bad_file_folder = "testing_data_segregation/bad_data/"
         self.testing_files_from_db = None
-    
         self.db_connection = DBConnectionContext(TestingDBConnection(self.filename))
+        self.create_dir()
+
+    def create_dir(self): 
+        path = Path(self.dir_to_save)
+        path.mkdir(parents = True, exist_ok = True)
+        self.training_file_from_db = self.dir_to_save
 
     def create_table(self):
         connection = self.db_connection.connect()
