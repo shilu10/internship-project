@@ -1,5 +1,5 @@
 import json
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_file
 from file_handler import FileHandler
 from training_data_validation import TrainingDataValidator 
 from testing_data_validation import TestingDataValidator
@@ -7,6 +7,8 @@ from file_operation import FileOperation
 from training_data_preprocessing import TrainingDataPreprocessing
 from model_building import ModelBuilding
 from predict import Predict
+from io import BytesIO
+
 
 
 app = Flask(__name__, template_folder = "templates") 
@@ -86,8 +88,13 @@ def testing():
         #moving the bad files to the archive folder
         file_operation_obj.moving_bad_files_to_archive()
         
-        if predict.run():
-            return jsonify({"prediction": "success"})
+        filename = predict.run()
+        if filename:
+            return send_file(
+                    f"prediction_files/{filename}",
+                    mimetype="text/csv",
+                    attachment_filename="export.csv")
+
         return jsonify({"prediction": "failure"})
     return render_template('index.html')
 

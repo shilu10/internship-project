@@ -6,7 +6,6 @@ import pickle
 import numpy as np
 from pathlib import Path
 
-
 class Predict: 
     """
         If the file for the prediction has been upto the schema, then it will in the 
@@ -59,12 +58,13 @@ class Predict:
 
             pred_df = pd.concat([cluster0_pred_df, cluster1_pred_df, cluster2_pred_df], axis=0)
             pred_df = pred_df.sort_index()
-            pred_df.to_csv(f"{self.filename.split('.')[0]}_prediction.csv", index=True)
+            prediction_file = f"{self.filename.split('.')[0]}_prediction.csv"
+            pred_df.to_csv(prediction_file, index=True)
             
-            if not exists(f"prediction_files/{self.filename.split('.')[0]}_prediction.csv"): 
-                shutil.move(f"{self.filename.split('.')[0]}_prediction.csv", "prediction_files")
+            if not exists(prediction_file): 
+                shutil.move(prediction_file, "prediction_files")
             self.logger.log("testing_logs", "testing.log", "info", "Completed the prediction of the client data and also moved the csv file to prediction_files/ directory")
-            return True
+            return prediction_file
 
         except Exception as error:
             self.logger.log("testing_logs", "testing.log", "error", f"Error while prediction {error}")
