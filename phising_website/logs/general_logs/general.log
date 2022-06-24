@@ -1,9 +1,15 @@
-info : 2022-06-23 : 14:42:42 : Completed the client training data validation 
-info : 2022-06-23 : 14:42:42 : Feature Selection of Validated Client Training Data Started!! 
-error : 2022-06-23 : 14:42:42 : Error While Selecting the features in feature selection [Errno 2] No such file or directory: 'training_files_from_d/phising_08012020_120000.csv' 
-info : 2022-06-23 : 14:42:42 : Started the clustering process 
-error : 2022-06-23 : 14:42:42 : Error during the process of clustering 
-info : 2022-06-23 : 14:42:42 : Creating a csv file from the preprocessed client data 
-error : 2022-06-23 : 14:42:42 : Error while creating a csv file from the preprocessed client data 
-info : 2022-06-23 : 14:42:42 : Started the db operations for preprocessed client data 
-error : 2022-06-23 : 14:42:42 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'training_data_segregation/good_data/preprocessed_data_phising_08012020_120000.csv' 
+info : 2022-06-24 : 12:41:54 : Moving the Client file to the client_files_training/ directory.... 
+error : 2022-06-24 : 12:41:54 : Started the client training data validation 
+info : 2022-06-24 : 12:41:54 : Validation of the Training Data Started.. 
+info : 2022-06-24 : 12:42:03 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-06-24 : 12:42:03 : Started the data transformation for the Client Data... 
+error : 2022-06-24 : 12:42:03 : Probelm occured during the  data transformation for the Client Data... 
+info : 2022-06-24 : 12:42:42 : Completed the client training data validation 
+info : 2022-06-24 : 12:42:42 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-06-24 : 12:42:42 : Error While Selecting the features in feature selection [Errno 2] No such file or directory: 'training_files_from_d/phising_08012020_120000.csv' 
+info : 2022-06-24 : 12:42:42 : Started the clustering process 
+error : 2022-06-24 : 12:42:42 : Error during the process of clustering 
+info : 2022-06-24 : 12:42:42 : Creating a csv file from the preprocessed client data 
+error : 2022-06-24 : 12:42:42 : Error while creating a csv file from the preprocessed client data 
+info : 2022-06-24 : 12:42:42 : Started the db operations for preprocessed client data 
+info : 2022-06-24 : 12:43:12 : Successfully created the training data from the client data. 
