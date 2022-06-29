@@ -14,6 +14,7 @@ class TestingDataValidator :
 
     
     def validate_testing_data(self, filename):
+        print("called")
         try: 
             self.logger.log("general_logs", "general.log", "info", f"Started the client testing data validation")
             # Getting the predefined schema values from the schema files.
@@ -42,13 +43,14 @@ class TestingDataValidator :
             client_data_transformer = TransformClientData()
             client_data_transformer.transform_client_data(filename)
 
-            testing_db_operations = DataBaseOperationsContext(state = TestingDataBaseOperations(columns_name, filename, "training_files_from_db/"))
+            print(filename, "for the testing")
+            testing_db_operations = DataBaseOperationsContext(state = TestingDataBaseOperations(columns_name, filename, "testing_files_from_db/"))
 
             testing_db_operations.create_dir()
             testing_db_operations.create_table()
 
             # for insertion of values into the table 
-            testing_db_operations.insert_values()
+            testing_db_operations.insert_value()
 
             # convert the table values into csv 
             testing_db_operations.create_csv()

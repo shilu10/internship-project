@@ -45,7 +45,7 @@ class TrainingDataValidator:
             training_db_operations.create_table()
 
             # for insertion of values into the table 
-            training_db_operations.insert_values()
+            training_db_operations.insert_value()
 
             # convert the table values into csv 
             training_db_operations.create_csv()

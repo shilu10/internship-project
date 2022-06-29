@@ -6,6 +6,7 @@ from file_operation import FileOperation
 #from training_data_preprocessing import TrainingDataPreprocessing
 from model_building import ModelBuilding
 from predict import Predict
+from training_data_preprocessing import TrainingDataPreprocessing
 
 app = Flask(__name__, template_folder = "templates") 
 
@@ -29,17 +30,17 @@ def training():
         training_data_validator.validate_training_data(filename)
 
         # preprocessing of the validated client data.
-       # training_data_preprocessor = TrainingDataPreprocessing(filename)
+        training_data_preprocessor = TrainingDataPreprocessing(filename)
 
         # feature selection -> clustering
-        #training_data_preprocessor.feature_selection()
-        #training_data_preprocessor.clustering()
+        training_data_preprocessor.feature_selection()
+        training_data_preprocessor.clustering()
 
         # creating a csvfile out of preprocessed data
-       # training_data_preprocessor.csv_from_preprocessed_data()
+        training_data_preprocessor.csv_from_preprocessed_data()
 
         # adding the data to the db, and also creating a csv out of it.
-        #training_data_preprocessor.db_operations()
+        training_data_preprocessor.db_operations()
 
         # this is the way to build the model  in dynamic way(but takes some time)
         # training a model

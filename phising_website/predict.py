@@ -61,8 +61,11 @@ class Predict:
             prediction_file = f"{self.filename.split('.')[0]}_prediction.csv"
             pred_df.to_csv(prediction_file, index=True)
             
-            if not exists(prediction_file): 
-                shutil.move(prediction_file, "prediction_files")
+            try: 
+                if exists(prediction_file): 
+                    shutil.move(prediction_file, "prediction_files")
+            except Exception as error: 
+                print(error, "in moving files")
             self.logger.log("testing_logs", "testing.log", "info", "Completed the prediction of the client data and also moved the csv file to prediction_files/ directory")
             return prediction_file
 
