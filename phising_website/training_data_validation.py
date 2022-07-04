@@ -11,7 +11,7 @@ class TrainingDataValidator:
     def __init__(self):
         self.type_of_data = "training" 
         self.logger = logger.Logger()
-        self.file_path = "client_files_training/"
+        self.file_path = "client_files/training/"
 
     def validate_training_data(self, filename):
         try: 
@@ -39,8 +39,8 @@ class TrainingDataValidator:
 
            # db_operations = DataBaseOperations(columns_name, filename, "training_files_from_db/")
             
-            training_db_operations = DataBaseOperationsContext(TrainingDataBaseOperations(columns_name, filename, "training_files_from_db/"))
-
+            training_db_operations = DataBaseOperationsContext(TrainingDataBaseOperations(columns_name, filename, "files_from_db/training/"))
+           
             training_db_operations.create_dir()
             training_db_operations.create_table()
 

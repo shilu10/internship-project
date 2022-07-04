@@ -10,7 +10,7 @@ class TestingDataValidator :
     def __init__(self):
         self.type_of_data = "testing" 
         self.logger = logger.Logger()
-        self.file_path = "client_files_testing/"
+        self.file_path = "client_files/testing/"
 
     
     def validate_testing_data(self, filename):
@@ -44,7 +44,7 @@ class TestingDataValidator :
             client_data_transformer.transform_client_data(filename)
 
             print(filename, "for the testing")
-            testing_db_operations = DataBaseOperationsContext(state = TestingDataBaseOperations(columns_name, filename, "testing_files_from_db/"))
+            testing_db_operations = DataBaseOperationsContext(state = TestingDataBaseOperations(columns_name, filename, "files_from_db/testing/"))
 
             testing_db_operations.create_dir()
             testing_db_operations.create_table()

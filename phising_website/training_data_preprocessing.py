@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 from kneed import KneeLocator
 from application_logger import logger 
 from sklearn.feature_selection import mutual_info_classif, SelectKBest
-from db import DataBaseOperationsContext, PreproccessingDataBaseOperations
+from db import DataBaseOperationsContext, PreprocessingDataBaseOperation
 from pathlib import Path
 
 class TrainingDataPreprocessing: 
@@ -33,7 +33,7 @@ class TrainingDataPreprocessing:
                 selected_cols = pickle.load(f)
                 self.selected_cols = selected_cols
                 # reading the file from the db_training_files.
-            validated_client_data = pd.read_csv(f'training_files_from_db/{self.filename}')
+            validated_client_data = pd.read_csv(f'files_from_db/training/{self.filename}')
             y = validated_client_data['phishing']
             validated_client_data = validated_client_data[selected_cols]
             X = pd.DataFrame(validated_client_data)
@@ -86,7 +86,7 @@ class TrainingDataPreprocessing:
         try: 
             self.X['cluster_labels'] = self.cluster_labels
             self.X['labels'] = self.y 
-            self.X.to_csv(f"ml_preprocessed_data/training_files/preprocessed_data_{self.filename}", index=False)
+            self.X.to_csv(f"training_data_segregation/good_data/preprocessed_data_{self.filename}", index=False)
 
         except Exception as error: 
             self.logger.log("general_logs", "general.log", "error", f"Error while creating a csv file from the preprocessed client data {error}")
@@ -95,7 +95,8 @@ class TrainingDataPreprocessing:
     def db_operations(self): 
         self.logger.log("general_logs", "general.log", "info", "Started the db operations for preprocessed client data")
         try: 
-            preprocessed_db_opr = DataBaseOperationsContext(state = PreproccessingDataBaseOperations(self.selected_cols, f"preprocessed_data_{self.filename}", "preprocessed_files_from_db/"))
+            preprocessed_db_opr = DataBaseOperationsContext(state = PreprocessingDataBaseOperation(self.selected_cols, f"preprocessed_data_{self.filename}", "files_from_db/preprocessing/"))
+           
             preprocessed_db_opr.create_dir()
             preprocessed_db_opr.create_table()
             preprocessed_db_opr.insert_value()

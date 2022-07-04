@@ -3,6 +3,7 @@ from pathlib import Path
 from application_logger import logger 
 import pandas as pd 
 import shutil
+import json
 
 
 def abstractfunc(func): 
@@ -24,7 +25,7 @@ class Singleton(type):
     return cls._instance[cls]
 
 
-class IDBConnection(metaclass=Singleton): 
+class IDBConnection(): 
     @abstractfunc
     def connect(self): 
         pass
@@ -94,16 +95,14 @@ class TrainingDataBaseOperations(IDBOperarion):
         self.dir_to_save = dir_to_save
         self.good_file_folder = "training_data_segregation/good_data/"
         self.bad_file_folder = "training_data_segregation/bad_data/"
-        self.training_file_from_db = None
+        self.directory = None
         self.db_connection = DBConnectionContext(TrainingDBConnection()) 
-       
         self.logger = logger.Logger()
 
     def create_dir(self): 
         path = Path(self.dir_to_save)
-      
         path.mkdir(parents = True, exist_ok = True)
-        self.training_file_from_db = self.dir_to_save
+        self.directory = self.dir_to_save
    
     def create_table(self): 
         connection = self.db_connection.connect(self.filename)
@@ -168,7 +167,7 @@ class TrainingDataBaseOperations(IDBOperarion):
         try: 
             connection = self.db_connection.connect(self.filename)
             db_df = pd.read_sql_query("SELECT * FROM training", connection)
-            db_df.to_csv(self.training_file_from_db + self.filename, index = False)
+            db_df.to_csv(self.directory + self.filename, index = False)
             self.logger.log("db_logs", "db.log", "info", f"Successfully converted the table values into csv file and saved in the db_training_dir")
         
         except Exception as error:
@@ -179,28 +178,26 @@ class TrainingDataBaseOperations(IDBOperarion):
             self.logger.log("db_logs", "db.log", "info", f"Closed the db connection to {self.filename}")
 
 
-class PreproccessingDataBaseOperations(IDBOperarion): 
+class PreprocessingDataBaseOperation(IDBOperarion): 
 
     def __init__(self, column_names, filename, dir_to_save):
         self.column_names = column_names
         self.filename = filename
         self.dir_to_save = dir_to_save
-        self.good_file_folder = "ml_preprocessed_data/training_files/"
+        self.good_file_folder = "training_data_segregation/good_data/"
         self.bad_file_folder = "training_data_segregation/bad_data/"
-        self.training_file_from_db = None
+        self.directory = None
         self.db_connection = DBConnectionContext(PreprocessingDBConnection()) 
         self.logger = logger.Logger()
-      
 
     def create_dir(self): 
         path = Path(self.dir_to_save)
-      
         path.mkdir(parents = True, exist_ok = True)
-        self.training_file_from_db = self.dir_to_save
+        self.directory = self.dir_to_save
    
     def create_table(self): 
         connection = self.db_connection.connect(self.filename)
-        
+       
         cursor = connection.cursor()
         table_name = "preprocessing"
 
@@ -210,15 +207,16 @@ class PreproccessingDataBaseOperations(IDBOperarion):
             connection.commit()
 
             res = cursor.fetchone()[0]
-            print(res == 1 )
+           
             if res == 1:
                 self.logger.log("db_logs", "db.log", "info", f"Table named {table_name} created successfully in {self.filename} Database")
             
             else :
-                print(self.column_names, "in preprocessing")
-                for col_name in self.column_names: 
+                with open("/home/pi/internship-project/phising_website/schema_for_training_data.json") as f:
+                    data = json.load(f)
 
-                    col_type = self.column_names[col_name]                
+                for col_name in self.column_names: 
+                    col_type = data.get('Columns_name').get(col_name)                
                     try :      
                         query = f'ALTER TABLE {table_name} ADD COLUMN "{col_name}" {col_type}'
                         cursor.execute(query)
@@ -230,7 +228,7 @@ class PreproccessingDataBaseOperations(IDBOperarion):
                         connection.commit()
                         
         except Exception as error:
-            self.logger.log("db_logs", "db.log", "error", f"Error while creating table named{table_name} in {self.filename} Database {error}")
+            self.logger.log("db_logs", "db.log", "error", f"Error while creating {table_name} in {self.filename} Database {error}")
 
         else:
             self.logger.log("db_logs", "db.log", "info", f"Table named {table_name} created successfully in {self.filename}")
@@ -245,13 +243,13 @@ class PreproccessingDataBaseOperations(IDBOperarion):
             data = pd.read_csv(self.good_file_folder + self.filename)
             data.to_sql("preprocessing", connection, if_exists = 'replace', index = False)
             connection.commit()
-            self.logger.log("db_logs", "db.log", "info", f"Values are inserted into the table of training in {self.filename}")
+            self.logger.log("db_logs", "db.log", "info", f"Values are inserted into the table of preprocessing in {self.filename}")
         
         except Exception as error:
             connection.rollback()
             shutil.move(self.good_file_folder + self.filename, self.bad_file_folder)
             self.logger.log("general_logs", "general.log", "error", f"Error while working with the good data file during the database operation so moving it into bad data directory")
-            self.logger.log("db_logs", "db.log", "error", f"Error while inserting the values into training new in {self.filename}")
+            self.logger.log("db_logs", "db.log", "error", f"Error while inserting the values into preprocessing new in {self.filename}")
 
         finally:
             connection.close()
@@ -262,15 +260,17 @@ class PreproccessingDataBaseOperations(IDBOperarion):
         try: 
             connection = self.db_connection.connect(self.filename)
             db_df = pd.read_sql_query("SELECT * FROM preprocessing", connection)
-            db_df.to_csv(self.training_file_from_db + self.filename, index = False)
-            self.logger.log("db_logs", "db.log", "info", f"Successfully converted the table values into csv file and saved in the db_training_dir")
+            print(db_df, "data")
+            db_df.to_csv(self.directory + self.filename, index = False)
+            self.logger.log("db_logs", "db.log", "info", f"Successfully converted the table values into csv file and saved in the preprocessed_files_from_db")
         
         except Exception as error:
-            self.logger.log("db_logs", "db.log", "error", f"Error during the creation of csv file from the values of the db table")
+            self.logger.log("db_logs", "db.log", "error", f"Error during the creation of csv file from the values of the db table in preprocessing phase")
 
         finally:
             connection.close()
             self.logger.log("db_logs", "db.log", "info", f"Closed the db connection to {self.filename}")
+
 
 
 class TestingDataBaseOperations(IDBOperarion): 
@@ -281,14 +281,14 @@ class TestingDataBaseOperations(IDBOperarion):
         self.dir_to_save = dir_to_save
         self.good_file_folder = "testing_data_segregation/good_data/"
         self.bad_file_folder = "testing_data_segregation/bad_data/"
-        self.testing_files_from_db = None
+        self.directory = None
         self.db_connection = DBConnectionContext(TestingDBConnection())
         self.logger = logger.Logger()
 
     def create_dir(self): 
         path = Path(self.dir_to_save)
         path.mkdir(parents = True, exist_ok = True)
-        self.testing_files_from_db = self.dir_to_save
+        self.directory = self.dir_to_save
 
     def create_table(self):
         connection = self.db_connection.connect(self.filename)
@@ -357,7 +357,7 @@ class TestingDataBaseOperations(IDBOperarion):
             #print(self.filename, "in testing")
             connection = self.db_connection.connect(self.filename)
             db_df = pd.read_sql_query("SELECT * FROM testing", connection)
-            db_df.to_csv(self.testing_files_from_db + self.filename, index = False)
+            db_df.to_csv(self.directory + self.filename, index = False)
             self.logger.log("testing_db_logs", "db.log", "info", f"Successfully converted the table values into csv file and saved in the testing_files_from_db directory")
         
         except Exception as error:
@@ -374,23 +374,23 @@ class TrainingDBConnection(IDBConnection):
         self.create_dir()
 
     def create_dir(self):
-        self.path = Path("training_databases/")
+        self.path = Path("databases/")
         self.path.mkdir(parents = True, exist_ok = True)
 
     def connect(self, filename):
         
         try :
             self.db_name = filename.split('.')[0] + ".db"
-            self.logger.log("db_logs", "db.log", "info", f"Started the db connection to {self.db_name} in training")
-            self.connection = sqlite3.connect(Path(f"training_databases/{self.db_name}"))
+            self.logger.log("db_logs", "db.log", "info", f"Started the db connection to {self.db_name} in training phase")
+            self.connection = sqlite3.connect(Path(f"databases/{self.db_name}"))
             return self.connection
 
         except ConnectionError as error:
-            self.logger.log("db_logs", "db.log", "error", f"Error While connecting to the {self.db_name} Database")
+            self.logger.log("db_logs", "db.log", "error", f"Error While connecting to the {self.db_name} Database in training phase")
             raise error 
         
         finally: 
-            self.logger.log("db_logs", "db.log", "info", f"closed the db connection to {self.db_name} in training")
+            self.logger.log("db_logs", "db.log", "info", f"closed the db connection to {self.db_name} in training phase")
 
 
 class TestingDBConnection(IDBConnection):
@@ -399,23 +399,22 @@ class TestingDBConnection(IDBConnection):
         self.create_dir()
         
     def create_dir(self):
-        self.path = Path("testing_databases/")
+        self.path = Path("databases/")
         self.path.mkdir(parents = True, exist_ok = True)
         
-
-    def connect(self,  filename):
+    def connect(self, filename):
         try :
             self.db_name = filename.split('.')[0] + ".db"
-            self.logger.log("testing_db_logs", "db.log", "info", f"Started the db connection to {self.db_name} in testing")
-            self.connection = sqlite3.connect(Path(f"testing_databases/{self.db_name}"))
+            self.logger.log("testing_db_logs", "db.log", "info", f"Started the db connection to {self.db_name} in testing phase")
+            self.connection = sqlite3.connect(Path(f"databases/{self.db_name}"))
             return self.connection
 
         except ConnectionError as error:
-            self.logger.log("testing_db_logs", "db.log", "error", f"Error While connecting to the {self.db_name} Database")
+            self.logger.log("testing_db_logs", "db.log", "error", f"Error While connecting to the {self.db_name} Database in testing pahse")
             raise error
 
         finally:   
-            self.logger.log("db_logs", "db.log", "info", f"closed the db connection to {self.db_name} in testing") 
+            self.logger.log("db_logs", "db.log", "info", f"closed the db connection to {self.db_name} in testing phase") 
 
 
 class PreprocessingDBConnection(IDBConnection): 
@@ -424,21 +423,21 @@ class PreprocessingDBConnection(IDBConnection):
         self.create_dir()
         
     def create_dir(self):
-        self.path = Path("preprocessing_databases/")
+        self.path = Path("databases/")
         self.path.mkdir(parents = True, exist_ok = True)
 
     def connect(self, filename):
         
         try :
             self.db_name = filename.split('.')[0] + ".db"
-            self.logger.log("db_logs", "db.log", "info", f"Started the db connection to {self.db_name} in testing")
-            self.connection = sqlite3.connect(Path(f"preprocessing_databases/{self.db_name}"))
+            self.logger.log("db_logs", "db.log", "info", f"Started the db connection to {self.db_name} in preprocessing phase")
+            self.connection = sqlite3.connect(Path(f"databases/{self.db_name}"))
            # print(self.connection, "in preprocessing...")
             return self.connection
 
         except ConnectionError as error:
-            self.logger.log("db_logs", "db.log", "error", f"Error While connecting to the {self.db_name} Database")
+            self.logger.log("db_logs", "db.log", "error", f"Error While connecting to the {self.db_name} Database in preprocessing phase")
             raise error 
         
         finally:
-            self.logger.log("db_logs", "db.log", "info", f"closed the db connection to {self.db_name} in testing")
+            self.logger.log("db_logs", "db.log", "info", f"closed the db connection to {self.db_name} in preprocessing phase")

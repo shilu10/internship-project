@@ -9,9 +9,9 @@ class FileHandler:
     @classmethod
     def save_file(cls, file_obj, filename, type_of_data):
         if type_of_data == "training" : 
-            folder = 'client_files_training/'
+            folder = 'client_files/training/'
         else :
-            folder = "client_files_testing/"
+            folder = "client_files/testing/"
         
         _file = pd.read_csv(file_obj)
         path_for_file = Path(folder)
