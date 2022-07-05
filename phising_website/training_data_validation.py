@@ -1,6 +1,6 @@
 from application_logger import logger
 from schema_values import ClientRawData
-from file_operation import FileOperation
+
 from raw_data_validation import ValidatorBuilder
 from client_data_transformation import DataTransformation
 from db import TrainingDataBaseOperations, DataBaseOperationsContext

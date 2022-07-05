@@ -21,7 +21,7 @@ class ModelBuilding:
     def prepare_data_from_clusters(self) -> None: 
         try:
             self.logger.log("training_logs", "train.log", "info", "preparation of data for each clusters is started!!!")
-            main_df = pd.read_csv("preprocessed_files_from_db/preprocessed_data.csv")
+            main_df = pd.read_csv("files_from_db/preprocessing/preprocessed_data.csv")
             clusters = main_df.cluster_labels.unique()
             
             for cluster in clusters: 

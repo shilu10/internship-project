@@ -6,6 +6,7 @@ from application_logger import logger
 from sklearn.feature_selection import mutual_info_classif, SelectKBest
 from db import DataBaseOperationsContext, PreprocessingDataBaseOperation
 from pathlib import Path
+from file_operation import Preprocessing, FileOperationsContext 
 
 class TrainingDataPreprocessing: 
 
@@ -16,11 +17,11 @@ class TrainingDataPreprocessing:
         self.selected_cols = None
         self.cluster_labels = None
         self.logger = logger.Logger()
-        self.make_dir()
-
-    def make_dir(self): 
-        dir = Path("ml_preprocessed_data/training_files/")
-        dir.mkdir(parents=True, exist_ok=True)
+        self.create_dir()
+        
+    def create_dir(self):
+        file_operation_obj = FileOperationsContext(Preprocessing())
+        file_operation_obj.directory_creation() 
 
     def feature_selection(self): 
         self.logger.log("general_logs", "general.log", "info", "Feature Selection of Validated Client Training Data Started!!")
@@ -86,7 +87,7 @@ class TrainingDataPreprocessing:
         try: 
             self.X['cluster_labels'] = self.cluster_labels
             self.X['labels'] = self.y 
-            self.X.to_csv(f"training_data_segregation/good_data/preprocessed_data_{self.filename}", index=False)
+            self.X.to_csv(f"data_segregation/preprocessing/good_data/preprocessed_data_{self.filename}", index=False)
 
         except Exception as error: 
             self.logger.log("general_logs", "general.log", "error", f"Error while creating a csv file from the preprocessed client data {error}")
@@ -95,7 +96,7 @@ class TrainingDataPreprocessing:
     def db_operations(self): 
         self.logger.log("general_logs", "general.log", "info", "Started the db operations for preprocessed client data")
         try: 
-            preprocessed_db_opr = DataBaseOperationsContext(state = PreprocessingDataBaseOperation(self.selected_cols, f"preprocessed_data_{self.filename}", "files_from_db/preprocessing/"))
+            preprocessed_db_opr = DataBaseOperationsContext(state=PreprocessingDataBaseOperation(self.selected_cols, f"preprocessed_data_{self.filename}", "files_from_db/preprocessing/"))
            
             preprocessed_db_opr.create_dir()
             preprocessed_db_opr.create_table()

@@ -1,15 +1,71 @@
-info : 2022-07-04 : 14:46:00 : Moving the Client file to the client_files/training/ directory.... 
-info : 2022-07-04 : 14:46:00 : Started the client training data validation 
-info : 2022-07-04 : 14:46:00 : Validation of the Training Data Started.. 
-info : 2022-07-04 : 14:46:08 : Filename schema is valid. Moving the file into good directory training 
-info : 2022-07-04 : 14:46:08 : Completed the raw data validation 
-info : 2022-07-04 : 14:46:08 : Started the data transformation for the Client Data... 
-info : 2022-07-04 : 14:46:27 : Successfully completed the data transformation for the Client Data.. 
-info : 2022-07-04 : 14:46:54 : Completed the client training data validation 
-info : 2022-07-04 : 14:46:54 : Feature Selection of Validated Client Training Data Started!! 
-info : 2022-07-04 : 14:46:57 : Completed the process of Feature Selection 
-info : 2022-07-04 : 14:46:57 : Started the clustering process 
-info : 2022-07-04 : 14:47:02 : Completed the clustering process 
-info : 2022-07-04 : 14:47:02 : Creating a csv file from the preprocessed client data 
-info : 2022-07-04 : 14:47:04 : Started the db operations for preprocessed client data 
-info : 2022-07-04 : 14:47:17 : Successfully created the training data from the client data. 
+info : 2022-07-05 : 14:00:28 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:02:14 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:03:52 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:06:22 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:07:53 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:09:53 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:10:54 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:12:42 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:14:10 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:14:10 : Started the client training data validation 
+info : 2022-07-05 : 14:14:10 : Validation of the Training Data Started.. 
+info : 2022-07-05 : 14:14:16 : Filename schema is valid. Moving the file into good directory training 
+error : 2022-07-05 : 14:14:16 : Error during the validation of the training data [Errno 2] No such file or directory: 'training_data_segregation/good_data/' 
+info : 2022-07-05 : 14:14:16 : Started the data transformation for the Client Data... 
+error : 2022-07-05 : 14:14:16 : Probelm occured during the  data transformation for the Client Data...[Errno 2] No such file or directory: 'training_data_segregation/good_data/phising_08012020_120000.csv' 
+error : 2022-07-05 : 14:14:18 : Error during the client training data validation [Errno 2] No such file or directory: 'data_segregation/training/good_dataphising_08012020_120000.csv' 
+info : 2022-07-05 : 14:14:18 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-07-05 : 14:14:18 : Error While Selecting the features in feature selection [Errno 2] No such file or directory: 'files_from_db/training/phising_08012020_120000.csv' 
+info : 2022-07-05 : 14:14:18 : Started the clustering process 
+error : 2022-07-05 : 14:14:18 : Error during the process of clustering 
+info : 2022-07-05 : 14:14:18 : Creating a csv file from the preprocessed client data 
+error : 2022-07-05 : 14:14:18 : Error while creating a csv file from the preprocessed client data 'NoneType' object does not support item assignment 
+info : 2022-07-05 : 14:14:18 : Started the db operations for preprocessed client data 
+error : 2022-07-05 : 14:14:18 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'data_segregation/preprocessing/good_datapreprocessed_data_phising_08012020_120000.csv' 
+info : 2022-07-05 : 14:19:25 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:19:25 : Started the client training data validation 
+info : 2022-07-05 : 14:19:25 : Validation of the Training Data Started.. 
+info : 2022-07-05 : 14:19:31 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-07-05 : 14:19:31 : Completed the raw data validation 
+info : 2022-07-05 : 14:19:31 : Started the data transformation for the Client Data... 
+error : 2022-07-05 : 14:19:31 : Probelm occured during the  data transformation for the Client Data...[Errno 2] No such file or directory: 'training_data_segregation/good_data/phising_08012020_120000.csv' 
+error : 2022-07-05 : 14:19:31 : Error during the client training data validation [Errno 2] No such file or directory: 'data_segregation/training/good_dataphising_08012020_120000.csv' 
+info : 2022-07-05 : 14:19:31 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-07-05 : 14:19:31 : Error While Selecting the features in feature selection [Errno 2] No such file or directory: 'files_from_db/training/phising_08012020_120000.csv' 
+info : 2022-07-05 : 14:19:31 : Started the clustering process 
+error : 2022-07-05 : 14:19:31 : Error during the process of clustering 
+info : 2022-07-05 : 14:19:31 : Creating a csv file from the preprocessed client data 
+error : 2022-07-05 : 14:19:31 : Error while creating a csv file from the preprocessed client data 'NoneType' object does not support item assignment 
+info : 2022-07-05 : 14:19:31 : Started the db operations for preprocessed client data 
+error : 2022-07-05 : 14:19:31 : error during db operations for preprocessed client data [Errno 2] No such file or directory: 'data_segregation/preprocessing/good_datapreprocessed_data_phising_08012020_120000.csv' 
+info : 2022-07-05 : 14:23:23 : Moving the Client file to the client_files/training/ directory.... 
+info : 2022-07-05 : 14:23:23 : Started the client training data validation 
+info : 2022-07-05 : 14:23:23 : Validation of the Training Data Started.. 
+info : 2022-07-05 : 14:23:30 : Filename schema is valid. Moving the file into good directory training 
+info : 2022-07-05 : 14:23:30 : Completed the raw data validation 
+info : 2022-07-05 : 14:23:30 : Started the data transformation for the Client Data... 
+info : 2022-07-05 : 14:23:47 : Successfully completed the data transformation for the Client Data.. 
+info : 2022-07-05 : 14:24:06 : Moving the Client file to the client_files/testing/ directory.... 
+info : 2022-07-05 : 14:24:06 : Started the client testing data validation 
+info : 2022-07-05 : 14:24:06 : Validation of the Training Data Started.. 
+info : 2022-07-05 : 14:24:30 : Filename schema is valid. Moving the file into good directory testing 
+info : 2022-07-05 : 14:24:30 : Completed the raw data validation 
+info : 2022-07-05 : 14:24:30 : Started the data transformation for the Client Data... 
+info : 2022-07-05 : 14:24:36 : Completed the client training data validation 
+info : 2022-07-05 : 14:24:36 : Feature Selection of Validated Client Training Data Started!! 
+info : 2022-07-05 : 14:24:51 : Completed the process of Feature Selection 
+info : 2022-07-05 : 14:24:51 : Started the clustering process 
+info : 2022-07-05 : 14:25:01 : Successfully completed the data transformation for the Client Data... 
+info : 2022-07-05 : 14:25:02 : Completed the clustering process 
+info : 2022-07-05 : 14:25:02 : Creating a csv file from the preprocessed client data 
+info : 2022-07-05 : 14:25:07 : Started the db operations for preprocessed client data 
+info : 2022-07-05 : 14:25:35 : Successfully created the training data from the client data. 
+info : 2022-07-05 : 14:25:52 : Completed the client testing data validation 
+info : 2022-07-05 : 14:27:14 : Moving the Client file to the client_files/testing/ directory.... 
+info : 2022-07-05 : 14:27:14 : Started the client testing data validation 
+info : 2022-07-05 : 14:27:14 : Validation of the Training Data Started.. 
+info : 2022-07-05 : 14:27:22 : Filename schema is valid. Moving the file into good directory testing 
+info : 2022-07-05 : 14:27:22 : Completed the raw data validation 
+info : 2022-07-05 : 14:27:22 : Started the data transformation for the Client Data... 
+info : 2022-07-05 : 14:27:41 : Successfully completed the data transformation for the Client Data... 
+info : 2022-07-05 : 14:28:07 : Completed the client testing data validation 

@@ -1,24 +1,62 @@
-info : 2022-07-04 : 14:46:27 : Started the db connection to phising_08012020_120000.db in training phase 
-info : 2022-07-04 : 14:46:27 : closed the db connection to phising_08012020_120000.db in training phase 
-info : 2022-07-04 : 14:46:28 : Table named training created successfully in phising_08012020_120000.csv 
-info : 2022-07-04 : 14:46:28 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-07-04 : 14:46:28 : Started the db connection to phising_08012020_120000.db in training phase 
-info : 2022-07-04 : 14:46:28 : closed the db connection to phising_08012020_120000.db in training phase 
-info : 2022-07-04 : 14:46:38 : Values are inserted into the table of training in phising_08012020_120000.csv 
-info : 2022-07-04 : 14:46:38 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-07-04 : 14:46:38 : Started the db connection to phising_08012020_120000.db in training phase 
-info : 2022-07-04 : 14:46:38 : closed the db connection to phising_08012020_120000.db in training phase 
-info : 2022-07-04 : 14:46:54 : Successfully converted the table values into csv file and saved in the db_training_dir 
-info : 2022-07-04 : 14:46:54 : Closed the db connection to phising_08012020_120000.csv 
-info : 2022-07-04 : 14:47:04 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
-info : 2022-07-04 : 14:47:04 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
-info : 2022-07-04 : 14:47:05 : Table named preprocessing created successfully in preprocessed_data_phising_08012020_120000.csv 
-info : 2022-07-04 : 14:47:05 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
-info : 2022-07-04 : 14:47:05 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
-info : 2022-07-04 : 14:47:05 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
-info : 2022-07-04 : 14:47:09 : Values are inserted into the table of preprocessing in preprocessed_data_phising_08012020_120000.csv 
-info : 2022-07-04 : 14:47:09 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
-info : 2022-07-04 : 14:47:09 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
-info : 2022-07-04 : 14:47:09 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
-info : 2022-07-04 : 14:47:17 : Successfully converted the table values into csv file and saved in the preprocessed_files_from_db 
-info : 2022-07-04 : 14:47:17 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:14:16 : Started the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:14:16 : closed the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:14:18 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-07-05 : 14:14:18 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-07-05 : 14:14:18 : Started the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:14:18 : closed the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:14:18 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-07-05 : 14:14:18 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:14:18 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:14:18 : Table named preprocessing created successfully in preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:14:18 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:14:18 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:14:18 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:14:18 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:19:31 : Started the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:19:31 : closed the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:19:31 : Table named training created successfully in phising_08012020_120000.csv Database 
+info : 2022-07-05 : 14:19:31 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-07-05 : 14:19:31 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-07-05 : 14:19:31 : Started the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:19:31 : closed the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:19:31 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-07-05 : 14:19:31 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:19:31 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:19:31 : Table named preprocessing created successfully in preprocessed_data_phising_08012020_120000.csv Database 
+info : 2022-07-05 : 14:19:31 : Table named preprocessing created successfully in preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:19:31 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:19:31 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:19:31 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:19:31 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:23:48 : Started the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:23:48 : closed the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:23:48 : Table named training created successfully in phising_08012020_120000.csv Database 
+info : 2022-07-05 : 14:23:48 : Table named training created successfully in phising_08012020_120000.csv 
+info : 2022-07-05 : 14:23:48 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-07-05 : 14:23:48 : Started the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:23:48 : closed the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:24:01 : Values are inserted into the table of training in phising_08012020_120000.csv 
+info : 2022-07-05 : 14:24:01 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-07-05 : 14:24:01 : Started the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:24:01 : closed the db connection to phising_08012020_120000.db in training phase 
+info : 2022-07-05 : 14:24:36 : Successfully converted the table values into csv file and saved in the db_training_dir 
+info : 2022-07-05 : 14:24:36 : Closed the db connection to phising_08012020_120000.csv 
+info : 2022-07-05 : 14:25:01 : closed the db connection to phising_29062022_120000.db in testing phase 
+info : 2022-07-05 : 14:25:06 : closed the db connection to phising_29062022_120000.db in testing phase 
+info : 2022-07-05 : 14:25:07 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:25:07 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:25:07 : Table named preprocessing created successfully in preprocessed_data_phising_08012020_120000.csv Database 
+info : 2022-07-05 : 14:25:07 : Table named preprocessing created successfully in preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:25:07 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:25:07 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:25:07 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:25:15 : Values are inserted into the table of preprocessing in preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:25:15 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:25:15 : Started the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:25:15 : closed the db connection to preprocessed_data_phising_08012020_120000.db in preprocessing phase 
+info : 2022-07-05 : 14:25:26 : closed the db connection to phising_29062022_120000.db in testing phase 
+info : 2022-07-05 : 14:25:34 : Successfully converted the table values into csv file and saved in the preprocessed_files_from_db 
+info : 2022-07-05 : 14:25:34 : Closed the db connection to preprocessed_data_phising_08012020_120000.csv 
+info : 2022-07-05 : 14:27:41 : closed the db connection to phising_29062022_120000.db in testing phase 
+info : 2022-07-05 : 14:27:41 : closed the db connection to phising_29062022_120000.db in testing phase 
+info : 2022-07-05 : 14:27:52 : closed the db connection to phising_29062022_120000.db in testing phase 

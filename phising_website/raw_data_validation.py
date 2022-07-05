@@ -91,22 +91,22 @@ class RawDataValidator:
                     self.logger.log("general_logs", "general.log", "info", f"Filename schema is valid. Moving the file into good directory {self.type_of_data}")
                     
                     if self.type_of_data == "training":
-                        shutil.copy(glob.glob(self.file_path + self.filename)[0], 'training_data_segregation/good_data/')
+                        shutil.copy(glob.glob(self.file_path + self.filename)[0], 'data_segregation/training/good_data/')
                     else:
-                        shutil.copy(glob.glob(self.file_path + self.filename)[0], 'testing_data_segregation/good_data/')
+                        shutil.copy(glob.glob(self.file_path + self.filename)[0], 'data_segregation/testing/good_data/')
                     
                 else:
                     if self.type_of_data == "training":
-                        shutil.copy(glob.glob(self.file_path + self.filename)[0], 'training_data_segregation/bad_data/')
+                        shutil.copy(glob.glob(self.file_path + self.filename)[0], 'data_segregation/training/bad_data/')
                     else :
-                        shutil.copy(glob.glob(self.file_path + self.filename)[0], 'testing_data_segregation/bad_data/')
+                        shutil.copy(glob.glob(self.file_path + self.filename)[0], 'data_segregation/testing/bad_data/')
                         
             else:
                 if self.type_of_data == "training":
                 #  print(file.read())
-                    shutil.copy(glob.glob(self.file_path + self.filename)[0], 'training_data_segregation/bad_data/')
+                    shutil.copy(glob.glob(self.file_path + self.filename)[0], 'data_segregation/training/bad_data/')
                 else:
-                    shutil.copy(glob.glob(self.file_path + self.filename)[0], 'testing_data_segregation/bad_data/')
+                    shutil.copy(glob.glob(self.file_path + self.filename)[0], 'data_segregation/testing/bad_data/')
 
                 self.logger.log("general_logs", "general.log", "error", f"Filename schema is not valid. Moving the file into bad directory {self.type_of_data}")
                 

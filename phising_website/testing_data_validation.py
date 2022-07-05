@@ -1,9 +1,9 @@
 from application_logger import logger
 from schema_values import ClientRawData
-from file_operation import FileOperation
+
 from raw_data_validation import ValidatorBuilder
 from client_testing_data_transformation import DataTransformation
-from db import DataBaseOperationsContext, TestingDBConnection, TestingDataBaseOperations
+from db import DataBaseOperationsContext, TestingDataBaseOperations
 
 class TestingDataValidator :
     # Class attributes.
@@ -23,11 +23,6 @@ class TestingDataValidator :
             #number_of_columns, columns_name, length_of_datestamp, length_of_timestamp = schema_obj.values_for_validation()
             number_of_columns, columns_name, length_of_datestamp, length_of_timestamp = schema_obj.values_for_validation()
             filename_pattern = schema_obj.regex_pattern_creation()
-
-            file_operation_obj = FileOperation(self.type_of_data)
-
-            # creation of good data and bad data folder.
-            file_operation_obj.directory_creation()
 
             # validates the data.
             validator = (ValidatorBuilder(self.type_of_data).add_column_name(columns_name).add_filename(filename)

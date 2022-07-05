@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify, send_file
 from file_handler import FileHandler
 from training_data_validation import TrainingDataValidator 
 from testing_data_validation import TestingDataValidator
-from file_operation import FileOperation
+from file_operation import FileOperationsContext, Training, Testing
 #from training_data_preprocessing import TrainingDataPreprocessing
 from model_building import ModelBuilding
 from predict import Predict
@@ -20,7 +20,8 @@ def training():
         FileHandler.save_file(file_obj, filename, "training")
 
         # handles the file operations like creation and deletion of the directory.
-        file_operation_obj = FileOperation("training")
+        print(Training(), "triain")
+        file_operation_obj = FileOperationsContext(Training())
 
         # creation of good data and bad data folder.
         file_operation_obj.directory_creation()
@@ -70,7 +71,7 @@ def testing():
         filename = file_obj.filename
         FileHandler.save_file(file_obj, filename, "testing")
 
-        file_operation_obj = FileOperation("testing")
+        file_operation_obj = FileOperationsContext(Testing())
         # creation of good data and bad data folder.
         file_operation_obj.directory_creation()
 

@@ -93,8 +93,8 @@ class TrainingDataBaseOperations(IDBOperarion):
         self.column_names = column_names
         self.filename = filename
         self.dir_to_save = dir_to_save
-        self.good_file_folder = "training_data_segregation/good_data/"
-        self.bad_file_folder = "training_data_segregation/bad_data/"
+        self.good_file_folder = "data_segregation/training/good_data/"
+        self.bad_file_folder = "data_segregation/training/good_data/"
         self.directory = None
         self.db_connection = DBConnectionContext(TrainingDBConnection()) 
         self.logger = logger.Logger()
@@ -184,8 +184,8 @@ class PreprocessingDataBaseOperation(IDBOperarion):
         self.column_names = column_names
         self.filename = filename
         self.dir_to_save = dir_to_save
-        self.good_file_folder = "training_data_segregation/good_data/"
-        self.bad_file_folder = "training_data_segregation/bad_data/"
+        self.good_file_folder = "data_segregation/preprocessing/good_data/"
+        self.bad_file_folder = "data_segregation/preprocessing/bad_data/"
         self.directory = None
         self.db_connection = DBConnectionContext(PreprocessingDBConnection()) 
         self.logger = logger.Logger()
@@ -279,8 +279,8 @@ class TestingDataBaseOperations(IDBOperarion):
         self.column_names = column_names
         self.filename = filename
         self.dir_to_save = dir_to_save
-        self.good_file_folder = "testing_data_segregation/good_data/"
-        self.bad_file_folder = "testing_data_segregation/bad_data/"
+        self.good_file_folder = "data_segregation/testing/good_data/"
+        self.bad_file_folder = "data_segregation/testing/good_data/"
         self.directory = None
         self.db_connection = DBConnectionContext(TestingDBConnection())
         self.logger = logger.Logger()

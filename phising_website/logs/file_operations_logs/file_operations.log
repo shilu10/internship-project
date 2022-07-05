@@ -1,3 +1,32 @@
-info : 2022-07-04 : 14:46:00 : Created the Directories successfully!! in training phase 
-info : 2022-07-04 : 14:47:17 : Deleted the file successfully in training phase!! 
-info : 2022-07-04 : 14:47:17 : moving the bad files to archive directories in training phase!! 
+info : 2022-07-05 : 14:14:10 : Started creating directories of training data 
+info : 2022-07-05 : 14:14:10 : Created the Directories successfully!! for training data 
+info : 2022-07-05 : 14:14:18 : Started creating directories of training data 
+info : 2022-07-05 : 14:14:18 : Created the Directories successfully!! for training data 
+info : 2022-07-05 : 14:14:18 : Started deletion the good files of the training data!! 
+info : 2022-07-05 : 14:14:18 : Successfully deleted the good files of training data 
+info : 2022-07-05 : 14:14:18 : Started moving bad files of training to archive directory 
+info : 2022-07-05 : 14:14:18 : Successfully moved the bad files of training to archive 
+info : 2022-07-05 : 14:19:25 : Started creating directories of training data 
+info : 2022-07-05 : 14:19:25 : Created the Directories successfully!! for training data 
+info : 2022-07-05 : 14:19:31 : Started creating directories of training data 
+info : 2022-07-05 : 14:19:31 : Created the Directories successfully!! for training data 
+info : 2022-07-05 : 14:19:31 : Started deletion the good files of the training data!! 
+info : 2022-07-05 : 14:19:31 : Successfully deleted the good files of training data 
+info : 2022-07-05 : 14:19:31 : Started moving bad files of training to archive directory 
+info : 2022-07-05 : 14:19:31 : Successfully moved the bad files of training to archive 
+info : 2022-07-05 : 14:23:23 : Started creating directories of training data 
+info : 2022-07-05 : 14:23:23 : Created the Directories successfully!! for training data 
+info : 2022-07-05 : 14:24:06 : Started creating directories of testing data 
+info : 2022-07-05 : 14:24:06 : Created the Directories successfully!! for testing data 
+info : 2022-07-05 : 14:24:36 : Started creating directories of training data 
+info : 2022-07-05 : 14:24:36 : Created the Directories successfully!! for training data 
+info : 2022-07-05 : 14:25:35 : Started deletion the good files of the training data!! 
+info : 2022-07-05 : 14:25:35 : Successfully deleted the good files of training data 
+info : 2022-07-05 : 14:25:35 : Started moving bad files of training to archive directory 
+info : 2022-07-05 : 14:25:35 : Successfully moved the bad files of training to archive 
+info : 2022-07-05 : 14:25:52 : Started moving bad files of testing to archive directory 
+info : 2022-07-05 : 14:25:52 : Successfully moved the bad files of testing to archive 
+info : 2022-07-05 : 14:27:14 : Started creating directories of testing data 
+info : 2022-07-05 : 14:27:14 : Created the Directories successfully!! for testing data 
+info : 2022-07-05 : 14:28:07 : Started moving bad files of testing to archive directory 
+info : 2022-07-05 : 14:28:07 : Successfully moved the bad files of testing to archive 

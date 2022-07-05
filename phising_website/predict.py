@@ -14,7 +14,7 @@ class Predict:
     def __init__(self, filename): 
         self.logger = logger.Logger()
         self.filename = filename 
-        self.filepath = f"testing_files_from_db/{self.filename}"
+        self.filepath = f"files_from_db/testing/{self.filename}"
         path = Path('prediction_files/')
         path.mkdir(parents=True, exist_ok=True)
         
