@@ -1,0 +1,16 @@
+info : 2022-07-07 : 14:36:19 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-07-07 : 14:36:19 : Error While Selecting the features in feature selection [Errno 2] No such file or directory: 'objects/selected_cols.obj' 
+info : 2022-07-07 : 14:36:19 : Started the clustering process 
+error : 2022-07-07 : 14:36:19 : Error during the process of clustering 
+info : 2022-07-07 : 14:36:20 : Creating a csv file from the preprocessed client data 
+error : 2022-07-07 : 14:36:20 : Error while creating a csv file from the preprocessed client data 'NoneType' object does not support item assignment 
+info : 2022-07-07 : 14:36:20 : Started the db operations for preprocessed client data 
+info : 2022-07-07 : 14:36:35 : Successfully created the training data from the client data. 
+info : 2022-07-07 : 14:37:58 : Feature Selection of Validated Client Training Data Started!! 
+error : 2022-07-07 : 14:37:58 : Error While Selecting the features in feature selection [Errno 2] No such file or directory: 'objects/selected_cols.obj' 
+info : 2022-07-07 : 14:37:58 : Started the clustering process 
+error : 2022-07-07 : 14:37:58 : Error during the process of clustering 
+info : 2022-07-07 : 14:37:58 : Creating a csv file from the preprocessed client data 
+error : 2022-07-07 : 14:37:58 : Error while creating a csv file from the preprocessed client data 'NoneType' object does not support item assignment 
+info : 2022-07-07 : 14:37:58 : Started the db operations for preprocessed client data 
+info : 2022-07-07 : 14:38:13 : Successfully created the training data from the client data. 

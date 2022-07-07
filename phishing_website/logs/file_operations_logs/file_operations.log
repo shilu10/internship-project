@@ -1,0 +1,20 @@
+info : 2022-07-07 : 14:34:14 : Started creating directories of testing data 
+info : 2022-07-07 : 14:34:14 : Created the Directories successfully!! for testing data 
+info : 2022-07-07 : 14:34:28 : Started creating directories of training data 
+info : 2022-07-07 : 14:34:28 : Created the Directories successfully!! for training data 
+info : 2022-07-07 : 14:36:04 : Started moving bad files of testing to archive directory 
+info : 2022-07-07 : 14:36:04 : Successfully moved the bad files of testing to archive 
+info : 2022-07-07 : 14:36:19 : Started creating directories of training data 
+info : 2022-07-07 : 14:36:19 : Created the Directories successfully!! for training data 
+info : 2022-07-07 : 14:36:35 : Started deletion the good files of the training data!! 
+info : 2022-07-07 : 14:36:35 : Successfully deleted the good files of training data 
+info : 2022-07-07 : 14:36:35 : Started moving bad files of training to archive directory 
+info : 2022-07-07 : 14:36:35 : Successfully moved the bad files of training to archive 
+info : 2022-07-07 : 14:37:09 : Started creating directories of training data 
+info : 2022-07-07 : 14:37:09 : Created the Directories successfully!! for training data 
+info : 2022-07-07 : 14:37:58 : Started creating directories of training data 
+info : 2022-07-07 : 14:37:58 : Created the Directories successfully!! for training data 
+info : 2022-07-07 : 14:38:13 : Started deletion the good files of the training data!! 
+info : 2022-07-07 : 14:38:13 : Successfully deleted the good files of training data 
+info : 2022-07-07 : 14:38:13 : Started moving bad files of training to archive directory 
+info : 2022-07-07 : 14:38:13 : Successfully moved the bad files of training to archive 

@@ -1,4 +1,0 @@
-info : 2022-07-05 : 14:25:52 : Started the prediction!! 
-error : 2022-07-05 : 14:25:54 : Error while prediction [Errno 2] No such file or directory: 'testing_files_from_db/phising_29062022_120000.csv' 
-info : 2022-07-05 : 14:28:07 : Started the prediction!! 
-info : 2022-07-05 : 14:28:13 : Completed the prediction of the client data and also moved the csv file to prediction_files/ directory 
